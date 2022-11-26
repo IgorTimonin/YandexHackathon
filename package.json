@@ -1,0 +1,20 @@
+{
+  "name": "yandexhackathon",
+  "version": "1.0.0",
+  "description": "##HR landing page, на которой рассказывается о вакансиях экспертов сопровождения и работе в Яндекс Практикуме. Эксперты сопровождения - это наставники и ревьюеры, работающие парт-тайм на обучающих курсах Практикума.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorTimonin/YandexHackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorTimonin/YandexHackathon/issues"
+  },
+  "homepage": "https://github.com/IgorTimonin/YandexHackathon#readme"
+}
