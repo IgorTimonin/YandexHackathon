@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IgorTimonin/YandexHackathon/issues"
   },
-  "homepage": "https://github.com/IgorTimonin/YandexHackathon#readme"
+  "homepage": "https://github.com/IgorTimonin/YandexHackathon#readme",
+  "devDependencies": {
+    "webpack-cli": "^5.0.0"
+  }
 }
