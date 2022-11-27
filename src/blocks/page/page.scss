@@ -1,0 +1,12 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+
+.page {
+  display: grid;
+  grid-template-columns:  repeat(12, 80px);
+  column-gap: 20px;
+  justify-content: center;
+  background: #E9E9E9;
+
+}
