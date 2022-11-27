@@ -3,6 +3,11 @@
   grid-column-end: 13;
   background-color: #fff;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin-top: 12px;
 }
 
 .header__logo{
@@ -13,7 +18,7 @@
 }
 
 .header__questions{
-  margin: 0;
+  margin: 0 260px 0 0;
   padding: 0;
   display: grid;
   grid-template-columns:  repeat(4, max-content);
