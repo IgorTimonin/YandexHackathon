@@ -2,5 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
+  min-height: 100vh;
   background: $primary-bg-color;
+  font-family: $font-family-primary;
 }
