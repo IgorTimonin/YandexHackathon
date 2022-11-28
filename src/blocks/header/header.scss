@@ -6,6 +6,8 @@
   justify-content: space-between;
   padding: 12px 20px;
   margin-top: 12px;
+  max-width: 1140px;
+  width: 100%;
 
   &__logo {
     display: block;
@@ -15,11 +17,17 @@
   }
 
   &__questions {
-    margin: 0 173px 0 0;
+    margin: 0 9.65% 0 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
     column-gap: 32px;
+  }
+
+  &__question {
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
   }
 
   &__question-text {
