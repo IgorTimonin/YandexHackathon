@@ -1,0 +1,142 @@
+$font-family: 'YS Text';
+
+.teaching{
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.teaching__title{
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  margin: 64px 0 48px;
+}
+
+.teaching__box{
+  margin-bottom: 198px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: 220px 220px;
+  row-gap: 5px;
+  column-gap: 4px;
+}
+
+.teaching__link{
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+}
+.teaching__link_a{
+  max-width: 380px;
+}
+.teaching__link_b{
+  max-width: 416px;
+}
+.teaching__link_c{
+  max-width: 376px;
+}
+.teaching__link_d{
+  max-width: 448px;
+}
+.teaching__link_e{
+  max-width: 349px;
+}
+
+.teaching__links{
+  display: flex;
+  column-gap: 4px;
+}
+
+.teaching__course-title{
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin: 0;
+
+  color: #000000;
+}
+
+.teaching__course-subtitle{
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  margin: 12px 0;
+  height: 106px;
+}
+
+.teaching__course-subtitle_s{
+  height: 125px;
+  margin: 4px 0;
+}
+
+.teaching__course-amount{
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #B3B3B3;
+  margin: 0;
+}
+
+.teaching__course{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.teaching__course_IT{
+  border-radius: 0px 16px 16px 0px;
+}
+
+.teaching__course_design{
+  border-radius: 16px 0px 0px 16px;
+}
+
+.teaching__course-box{
+  width: 100px;
+  background: #979797;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.teaching__course-box_sql{
+  border-radius: 120px 16px 16px 120px;
+  width: 150px;
+}
+
+.teaching__course-box_IT{
+  border-radius: 16px 0px 0px 16px;
+}
+.teaching__course-box_design{
+  border-radius: 0px 16px 16px 0px;
+}
+
+.teaching__course-box-text{
+
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.2214px;
+  line-height: 120%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #161616;
+}

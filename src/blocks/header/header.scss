@@ -23,7 +23,7 @@ $font-family: 'YS Text';
   margin: 0 173px 0 0;
   padding: 0;
   display: grid;
-  grid-template-columns:  repeat(4, max-content);
+  grid-template-columns:  repeat(4, minmax(min-content, max-content));
   column-gap: 32px;
 }
 

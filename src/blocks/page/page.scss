@@ -4,9 +4,14 @@ $primary-color: #333;
 
 .page {
   display: grid;
-  grid-template-columns:  repeat(12, 80px);
+  grid-template-columns:  repeat(12, minmax(min-content, 80px));
   column-gap: 20px;
   justify-content: center;
   background: #E9E9E9;
 
+}
+
+main{
+  grid-column-start: 1;
+  grid-column-end: 13;
 }
