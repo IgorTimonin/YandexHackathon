@@ -1,6 +1,7 @@
+@import "./style/variables.scss";
 @import "./vendor/normalize.css";
 @import "./vendor/fonts/fonts.css";
-
 @import "./blocks/page/page.scss";
-
 @import "./blocks/header/header.scss";
+@import "./blocks/layout/layout.scss";
+@import "./blocks/main-width-block/main-width-block.scss"
