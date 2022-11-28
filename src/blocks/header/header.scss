@@ -1,8 +1,4 @@
-$font-family: 'YS Text';
-
-.header{
-  grid-column-start: 1;
-  grid-column-end: 13;
+.header {
   background-color: #fff;
   border-radius: 16px;
   display: flex;
@@ -10,44 +6,43 @@ $font-family: 'YS Text';
   justify-content: space-between;
   padding: 12px 20px;
   margin-top: 12px;
-}
 
-.header__logo{
-  display: block;
-  background-image: url("images/header__logo.svg");
-  width: 163px;
-  height: 30px;
-}
+  &__logo {
+    display: block;
+    background-image: url("images/header__logo.svg");
+    width: 163px;
+    height: 30px;
+  }
 
-.header__questions{
-  margin: 0 173px 0 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns:  repeat(4, max-content);
-  column-gap: 32px;
-}
+  &__questions {
+    margin: 0 173px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 32px;
+  }
 
-.header__question-text{
-  list-style-type: none;
+  &__question-text {
+    list-style-type: none;
 
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.85);
-}
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.85);
+  }
 
-.header__button{
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  color: #fff;
-
-  border: none;
-  border-radius: 10px;
-  background-color: black;
-  padding: 9px 16px;
+  &__button {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    padding: 9px 16px;
+  }
 }
