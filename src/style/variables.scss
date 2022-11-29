@@ -2,6 +2,7 @@ $font-family: 'YS Text', Helvetica, sans-serif;
 $font-family-primary: 'YS Sans', Helvetica, sans-serif;
 $font-family-section-titles: 'YS Display', Helvetica, sans-serif;
 $primary-color: #bada55;
+$light-text-color: #fff;
 $accent-yellow-color: #FCD559;
 $accent-light-blue-color: #AACCF1;
 $blank-focus-color: #B3B3B3;
@@ -13,3 +14,39 @@ $content-primary-color: #000;
 $black-color: #000;
 $cards-bg-color: #fff;
 $cards-border-radius: 16px;
+
+//Mixins
+
+//общий стиль button
+@mixin button {
+  padding: 20px 24px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 120px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+//отступ слева в большинстве блоков
+@mixin cards-left-padding {
+  padding-left: 40px;
+}
+
+//скругление блоков и элементов
+@mixin cards-border-radius {
+  border-radius: 16px;
+}
+
+//Общий стиль заголовков секций
+@mixin title-font {
+  margin: 0;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
