@@ -19,14 +19,22 @@
     margin-bottom: 198px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 5px;
-    column-gap: 4px;
+    gap: 12px;
   }
 
   &__link{
-    display: flex;
+    display: grid;
+    grid-template-columns: 128px auto;
     text-decoration: none;
     color: #000000;
+
+    &_right{
+      grid-template-columns: auto 128px;
+    }
+
+    &_alone{
+      display: initial;
+    }
   }
 
   &__links{
@@ -43,7 +51,11 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
     margin: 0;
 
-    color: #000000;
+    color: $black-color;
+
+    &_light{
+      color: $light-text-color;
+    }
   }
 
   &__course-subtitle{
@@ -70,8 +82,16 @@
     font-size: 16px;
     line-height: 130%;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #B3B3B3;
+    color: $blank-focus-color;
     margin: 0;
+
+    &_dark{
+      color: $black-color;
+    }
+
+    &_light{
+      color: $light-text-color;
+    }
   }
 
   &__course{
@@ -92,6 +112,7 @@
 
     &_it{
       max-width: 217px;
+      border-radius: 0 16px 16px 0;
     }
 
     &_figma{
@@ -103,29 +124,43 @@
     }
 
     &_eng{
-      max-width: 187px;
+      width: 187px;
     }
 
     &_all{
-      max-width: 123px;
+      width: 123px;
+      background-color: $black-color;
     }
   }
 
   &__course-box{
     width: 140px;
-    background: #979797;
+    background: $accent-light-blue-color;
     border-radius: 16px 0 0 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    left: 12px;
     z-index: 0;
 
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2214px;
+    line-height: 120%;
+
     &_left{
-      right: 12px;
-      left: initial;
       border-radius: 0 16px 16px 0;
+      position: relative;
+      right: 12px;
+    }
+
+    &_blue{
+      background: $accent-blue-color;
+      color: $light-text-color;
+    }
+
+    &_yellow{
+      background: $accent-yellow-color;
     }
   }
 
