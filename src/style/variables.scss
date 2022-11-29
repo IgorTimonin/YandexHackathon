@@ -37,6 +37,7 @@ $cards-border-radius: 16px;
   border-radius: 16px;
 }
 
+//Общий стиль заголовков секций
 @mixin title-font {
   margin: 0;
   font-family: $font-family;
