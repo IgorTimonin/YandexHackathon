@@ -1,0 +1,47 @@
+.chanel-banner {
+  padding: 0 30px 128px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__content {
+    display: flex;
+    column-gap: 60px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    margin: 0;
+    margin-bottom: 2px;
+    padding: 0;
+  }
+
+  &__caption {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__image {
+    width: 75px;
+    height: 65px;
+    background: url('./images/tg-big.svg') center / contain no-repeat;
+  }
+
+  &__button {
+    @include button;
+    background: $cards-bg-color;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
+  }
+}
