@@ -1,0 +1,11 @@
+.quizz {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: $cards-left-padding;
+  background-color: $attention-color;
+  border-radius: $cards-border-radius;
+
+  &__info {
+  }
+}

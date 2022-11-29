@@ -2,22 +2,19 @@
   margin-top: 12px;
   margin-bottom: 75px;
 
-
   &__main {
     display: flex;
     align-items: center;
     flex-direction: row;
     background-color: $cards-bg-color;
-  border-radius: $cards-border-radius;
+    border-radius: $cards-border-radius;
+    padding-left: $cards-left-padding;
+    margin-bottom: 8px;
   }
 
   &__img {
-    // background-image: url('images/title-photo.jpg');
-    // width: 480px;
-    // height: 508px;
+    border-radius: 0 $cards-border-radius $cards-border-radius 0;
   }
 
-  &__quizz {
-    background-color: $attention-color;
-  }
+
 }
