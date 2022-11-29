@@ -1,0 +1,55 @@
+.section1 {
+  margin-top: 12px;
+  margin-bottom: 75px;
+
+  &__main {
+    @include cards-left-padding;
+    @include cards-border-radius;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: $cards-bg-color;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  &__text {
+    max-width: 540px;
+    padding-top: 32px
+  }
+
+  &__title {
+    @include title-font;
+    font-size: 48px;
+  }
+
+  &__subtitle {
+    @include title-font;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    color: $accent-yellow-color;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__img {
+    max-width: 480px;
+    max-height: 508px;
+  }
+
+  &__btn {
+    @include button;
+    background-color: $primary-text-color;
+    color: $light-text-color;
+    margin-bottom: 62px;
+  }
+}
