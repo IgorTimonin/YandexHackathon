@@ -1,0 +1,146 @@
+.teaching{
+
+  &__title {
+    width: fit-content;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 60px;
+      height: 60px;
+      background: url('./images/pencil.svg');
+      position: absolute;
+      right: -76px;
+      top: -5px;
+    }
+  }
+
+  &__box{
+    margin-bottom: 198px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 4px;
+  }
+
+  &__link{
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  &__links{
+    display: flex;
+    column-gap: 4px;
+  }
+
+  &__course-title{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0;
+
+    color: #000000;
+  }
+
+  &__course-subtitle{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin: 12px 0;
+    height: 106px;
+  }
+
+  &__course-subtitle_s{
+    height: 125px;
+    margin: 4px 0;
+  }
+
+  &__course-amount{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #B3B3B3;
+    margin: 0;
+  }
+
+  &__course{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    z-index: 1;
+
+    &_c{
+      max-width: 219px;
+    }
+
+    &_sql{
+      max-width: 216px;
+    }
+
+    &_it{
+      max-width: 217px;
+    }
+
+    &_figma{
+      max-width: 244px;
+    }
+
+    &_traffic{
+      max-width: 174px;
+    }
+
+    &_eng{
+      max-width: 187px;
+    }
+
+    &_all{
+      max-width: 123px;
+    }
+  }
+
+  &__course-box{
+    width: 140px;
+    background: #979797;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 12px;
+    z-index: 0;
+
+    &_left{
+      right: 12px;
+      left: initial;
+      border-radius: 0 16px 16px 0;
+    }
+  }
+
+
+
+  &__course-box-text{
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2214px;
+    line-height: 120%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #161616;
+  }
+}
+
