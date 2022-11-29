@@ -61,6 +61,15 @@
     border-radius: 120px;
     background: $black-color;
     color: $light-text-color;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .9;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
   }
 
   &__card-img {
