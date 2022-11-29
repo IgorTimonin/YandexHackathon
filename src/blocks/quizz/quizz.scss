@@ -1,11 +1,47 @@
 .quizz {
+  @include cards-left-padding;
   display: flex;
-  align-items: center;
+  position:relative;
+  align-items: flex-start;
   justify-content: space-between;
-  padding-left: $cards-left-padding;
   background-color: $attention-color;
   border-radius: $cards-border-radius;
+  padding-right: 40px;
+
+  &::before {
+    content: '';
+    background-image: url("images/writing-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 10px;
+    left: 32%;
+    width: 450px;
+    height: 90px;
+  }
 
   &__info {
+    height: 65px;
+    padding: 45px 0 73px
+  }
+
+  &__title {
+    @include title-font;
+    font-size: 32px
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__btn {
+    @include button;
+    margin-top: 47px;
+
   }
 }
