@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HackathonYandex</title>
   </head>
   <body>
     <div class="page">
       <div class="layout">
         <header class="header">
-          <a class="header__logo" target="_blank" href="https://practicum.yandex.ru/" alt="Главная яндекс практикума" ></a>
+          <a
+            class="header__logo"
+            target="_blank"
+            href="https://practicum.yandex.ru/"
+            alt="Главная яндекс практикума"
+          ></a>
           <ul class="header__questions">
             <li class="header__question-text">
-              <a class="header__question" href="#">Преимущества сотрудничества</a>
+              <a class="header__question" href="#"
+                >Преимущества сотрудничества</a
+              >
             </li>
             <li class="header__question-text">
               <a class="header__question" href="#">Направления обучения</a>
@@ -27,86 +34,126 @@
           <button class="header__button">Кого мы ищем</button>
         </header>
 
-
-      <main class="content">
-        <section class="section1">
-
+        <main class="content">
+          <section class="section1 main-width-block">
+            <div class="section1__main">
+              <div class="section1__text">
+                <h2 class="section1__title">
+                  Станьте наставником или ревьюером
+                </h2>
+                <h2 class="section1__subtitle">и делитесь своим опытом</h2>
+                <p class="section1__description">
+                  Ищем наставников и ревьюеров для программирования, анализа
+                  данных, менеджмента, маркетинга или дизайна
+                </p>
+                <button class="section1__btn btn">
+                  Почему Яндекс Практикум?
+                </button>
+              </div>
+              <img
+                class="section1__img"
+                src="<%=require('./images/title-photo.jpg')%>"
+              />
+            </div>
+            <div class="section1__quizz">
+              <div class="quizz__info">
+                <h3 class="quizz__title">Кто ты?</h3>
+                <p class="quizz__text">Ответь на вопросы, а мы подскажем какая роль тебе подходит</p>
+              </div>
+              <button>Выбери своего игрока!</button>
+            </div>
           </section>
-          <section class="section2">
 
+          <section class="section2"></section>
+          <section class="section3"></section>
+          <section class="section4"></section>
+          <section class="section5"></section>
+          <section class="section6"></section>
+          <section class="questions main-width-block">
+            <h2 class="section-title">Нас часто спрашивают...</h2>
+            <ul class="questions__accordeon">
+              <li class="questions__accordeon-item">
+                <input
+                  class="questions__accordeon-checkbox"
+                  type="checkbox"
+                  id="rd1"
+                />
+                <label for="rd1" class="questions__accordeon-question">
+                  У меня совсем нет преподовательского опыта. Я могу вести у вас
+                  курсы?
+                </label>
+                <p class="questions__accordeon-content">
+                  У меня совсем нет преподовательского опыта. Я могу вести у вас
+                  курсы? У меня совсем нет преподовательского опыта. Я могу
+                  вести у вас курсы?
+                </p>
+              </li>
+              <li class="questions__accordeon-item">
+                <input
+                  class="questions__accordeon-checkbox"
+                  type="checkbox"
+                  id="rd2"
+                />
+                <label for="rd2" class="questions__accordeon-question">
+                  Какой график и формат работы?
+                </label>
+                <p class="questions__accordeon-content">
+                  У меня совсем нет преподовательского опыта. Я могу вести у вас
+                  курсы? У меня совсем нет преподовательского опыта. Я могу
+                  вести у вас курсы?
+                </p>
+              </li>
+              <li class="questions__accordeon-item">
+                <input
+                  class="questions__accordeon-checkbox"
+                  type="checkbox"
+                  id="rd3"
+                />
+                <label for="rd3" class="questions__accordeon-question">
+                  Как меня введут в работу? И помогут ли, если появятся вопросы?
+                </label>
+                <p class="questions__accordeon-content">
+                  У меня совсем нет преподовательского опыта. Я могу вести у вас
+                  курсы? У меня совсем нет преподовательского опыта. Я могу
+                  вести у вас курсы?
+                </p>
+              </li>
+              <li class="questions__accordeon-item">
+                <input
+                  class="questions__accordeon-checkbox"
+                  type="checkbox"
+                  id="rd4"
+                />
+                <label for="rd4" class="questions__accordeon-question">
+                  Смогу ли я работать на нескольких направлениях, если обладаю
+                  экчпертизой в каждом из них?
+                </label>
+                <p class="questions__accordeon-content">
+                  У меня совсем нет преподовательского опыта. Я могу вести у вас
+                  курсы? У меня совсем нет преподовательского опыта. Я могу
+                  вести у вас курсы?
+                </p>
+              </li>
+              <li class="questions__accordeon-item">
+                <input
+                  class="questions__accordeon-checkbox"
+                  type="checkbox"
+                  id="rd5"
+                />
+                <label for="rd5" class="questions__accordeon-question">
+                  Я не гражданин России, смогу ли я сотрудничать?
+                </label>
+                <p class="questions__accordeon-content">
+                  У меня совсем нет преподовательского опыта. Я могу вести у вас
+                  курсы? У меня совсем нет преподовательского опыта. Я могу
+                  вести у вас курсы?
+                </p>
+              </li>
+            </ul>
           </section>
-          <section class="section3">
-
-          </section>
-          <section class="section4">
-
-          </section>
-          <section class="section5">
-
-          </section>
-          <section class="section6">
-        </section>
-        <section class="questions main-width-block">
-          <h2 class="section-title">Нас часто спрашивают...</h2>
-          <ul class="questions__accordeon">
-            <li class="questions__accordeon-item">
-              <input class="questions__accordeon-checkbox" type="checkbox" id="rd1">
-              <label for="rd1" class="questions__accordeon-question">
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-              </label>
-              <p class="questions__accordeon-content">
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-              </p>
-            </li>
-            <li class="questions__accordeon-item">
-              <input class="questions__accordeon-checkbox" type="checkbox" id="rd2">
-              <label for="rd2" class="questions__accordeon-question">
-                Какой график и формат работы?
-              </label>
-              <p class="questions__accordeon-content">
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-              </p>
-            </li>
-            <li class="questions__accordeon-item">
-              <input class="questions__accordeon-checkbox" type="checkbox" id="rd3">
-              <label for="rd3" class="questions__accordeon-question">
-                Как меня введут в работу? И помогут ли, если появятся вопросы?
-              </label>
-              <p class="questions__accordeon-content">
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-              </p>
-            </li>
-            <li class="questions__accordeon-item">
-              <input class="questions__accordeon-checkbox" type="checkbox" id="rd4">
-              <label for="rd4" class="questions__accordeon-question">
-                Смогу ли я работать на нескольких направлениях, если обладаю экчпертизой в каждом из них?
-              </label>
-              <p class="questions__accordeon-content">
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-              </p>
-            </li>
-            <li class="questions__accordeon-item">
-              <input class="questions__accordeon-checkbox" type="checkbox" id="rd5">
-              <label for="rd5" class="questions__accordeon-question">
-                Я не гражданин России, смогу ли я сотрудничать?
-              </label>
-              <p class="questions__accordeon-content">
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-                У меня совсем нет преподовательского опыта. Я могу вести у вас курсы?
-              </p>
-            </li>
-          </ul>
-        </section>
-
         </main>
 
-        <footer class="footer">
-
-        </footer>
+        <footer class="footer"></footer>
       </div>
     </div>
   </body>
