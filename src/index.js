@@ -1,4 +1,3 @@
-import './index.css'
 import './app.scss'
 
 const numbers = [2, 3, 5];

@@ -1,0 +1,64 @@
+.slider {
+  background: $accent-light-blue-color;
+  border-radius: $cards-border-radius;
+  // overflow: hidden;
+
+  &__inner {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 12px;
+  }
+
+  &__item {
+    flex-basis: 385px;
+    flex-shrink: 0;
+    margin-bottom: 32px;
+  }
+
+  &__item-inner {
+    background: $cards-bg-color;
+    border-radius: $cards-border-radius;
+    margin-bottom: 20px;
+
+    &_type_text {
+      padding: 32px 40px;
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__item-caption {
+    margin: 0 12px;
+  }
+
+  &__item-person {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__item-profession {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
