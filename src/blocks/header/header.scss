@@ -13,6 +13,10 @@
     background-image: url("images/header__logo.svg");
     width: 163px;
     height: 30px;
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
   }
 
   &__questions {

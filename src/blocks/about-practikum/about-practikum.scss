@@ -1,0 +1,23 @@
+.about-practikum{
+  padding: 72px 40px;
+
+  @media(max-width: $screen-m) {
+    padding: 40px 20px;
+  }
+
+  @media(max-width: $screen-s) {
+    padding: 20px 0;
+  }
+
+  &__text{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+
+    @media(max-width: $screen-m) {
+      font-size: 14px;
+    }
+  }
+}
