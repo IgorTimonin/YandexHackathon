@@ -1,10 +1,9 @@
 .vacancy-header{
-  background-color: $accent-light-blue-color;
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 18px;
+  padding: 16px 0;;
   width: 100%;
 
   @media(max-width: $screen-lg) {
