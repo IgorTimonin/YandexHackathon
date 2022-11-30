@@ -1,0 +1,108 @@
+.quizz-form {
+  background: $accent-light-blue-color;
+  height: 100%;
+  padding: 72px 127px 80px 72px;
+  border-radius: $cards-border-radius;
+  min-width: 1180px;
+  min-height: 720px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    font-family: $font-family-section-titles;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-family: $font-family-section-titles;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__form {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  &__screen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    &_number_second {
+      display: none;
+    }
+  }
+
+  &__fields {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 578px;
+    row-gap: 12px;
+  }
+
+  &__answer {
+    background: $cards-bg-color;
+    color: $primary-text-color;
+    padding: 16px 24px 16px 16px;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &__checkbox-visible {
+    width: 24px;
+    height: 24px;
+    background: url('./images/checkbox-empty.svg') center / contain no-repeat;
+  }
+
+  &__checkbox-hidden {
+    display: none;
+
+    &:checked + .quizz-form__checkbox-visible {
+      background-image: url('./images/checkbox-fill.svg');
+    }
+  }
+
+  &__button {
+    @include button;
+    font-size: 16px;
+    line-height: 20px;
+    color: $light-text-color;
+    background-color: $black-color;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
+  }
+}
