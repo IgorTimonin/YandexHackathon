@@ -36,12 +36,12 @@ const getQuizResult = () => {
 
 const completeQuiz = (e) => {
   e.preventDefault();
-  const { mentor, reviev } = getQuizResult();
-  if (mentor > reviev) {
+  const { mentor, review } = getQuizResult();
+  if (mentor > review) {
     showQuizzResultScreen(mentorScreenSelector)
     return;
   }
-  if (mentor < reviev) {
+  if (mentor < review) {
     showQuizzResultScreen(reviewScreenSelector)
     return;
   }

@@ -292,7 +292,7 @@
           </article>
         </section>
         <section class="vacancy main-width-block">
-          <h2 class="section-title vacancy__title">Кого мы ищем</h2>
+          <h2 class="section-title vacancy__title" id="vacancy">Кого мы ищем</h2>
           <form class="vacancy__filter">
             <select class="vacancy__filter-job">
               <option selected>Для наставников</option>
@@ -561,9 +561,13 @@
                   <span class="quizz-form__answer-text">Мне нравится делиться опытом и мотивировать</span>
                 </label>
               </fieldset>
-              <button class="quizz-form__button quizz-form__button_type_next-screen" type="button">
-                И еще пара вопросов
-              </button>
+              <div class="quizz-form__screen-bottom">
+                <button class="quizz-form__button quizz-form__button_type_next-screen" type="button">
+                  И еще пара вопросов
+                </button>
+                <span class="quizz-form__screen-number">1 из 2</span>
+              </div>
+              <div class="quizz-form__bg-image quizz-form__bg-image_number_first"></div>
             </div>
             <div class="quizz-form__screen quizz-form__screen_number_second">
               <fieldset form="quizz" class="quizz-form__fields">
@@ -589,9 +593,13 @@
                   <span class="quizz-form__answer-text">У меня есть более 2 лет опыта работы по специальности</span>
                 </label>
               </fieldset>
-              <button class="quizz-form__button quizz-form__button_type_end-quizz" type="submit">
-                Круто! Узнаем кто ты?
-              </button>
+              <div class="quizz-form__screen-bottom">
+                <button class="quizz-form__button quizz-form__button_type_end-quizz" type="submit">
+                  Круто! Узнаем кто ты?
+                </button>
+                <span class="quizz-form__screen-number">2 из 2</span>
+              </div>
+              <div class="quizz-form__bg-image quizz-form__bg-image_number_second"></div>
             </div>
           </form>
         </div>
@@ -619,11 +627,13 @@
         <div class="quizz-result quizz-result_type_review">
           <div class="quizz-result__text">
             <h3 class="quizz-result__title"><span class="quizz-result__text-lined">Строгий</span> добрый
-              и справедливый…</br>Без такого <span class="quizz-result__text-accent">ревьюера</span> нам не обойтись!</h3>
-            <p class="quizz-result__subtitle">Зоркий глаз, быстрый ум, каждое слово на вес золота. Наши ревьюеры хорошо понимают, как важна обратная связь в процессе обучения</p>
+              и справедливый…</br>Без такого <span class="quizz-result__text-accent">ревьюера</span> нам не обойтись!
+            </h3>
+            <p class="quizz-result__subtitle">Зоркий глаз, быстрый ум, каждое слово на вес золота. Наши ревьюеры хорошо
+              понимают, как важна обратная связь в процессе обучения</p>
             <button type="button" class="quizz-result__button">К открытым позициям</button>
           </div>
-          <img src="<%=require('./images/review.jpg')%>" alt="Ревьюер" class="quizz-result__image">
+          <img src="<%=require('./images/reviewer.jpg')%>" alt="Ревьюер" class="quizz-result__image">
         </div>
       </div>
     </div>
