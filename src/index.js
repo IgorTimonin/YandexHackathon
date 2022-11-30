@@ -1,5 +1,6 @@
 import './app.scss'
 import Slider from './blocks/slider/slider.js';
+import Popup from './blocks/popup/popup';
 
 const slider = new Slider({
   sliderSelector: '.slider',
@@ -10,4 +11,14 @@ const slider = new Slider({
   slidesInRow: 3,
 })
 
+const popup = new Popup({
+  popupSelector: '.popup',
+  openedClass: 'popup_opened',
+  closeBtnSelector: '.popup__close-btn',
+});
+
+const quizBtn = document.querySelector('.quizz__btn');
+quizBtn.addEventListener('click', () => popup.open());
+
+popup.addListeners();
 slider.enable();

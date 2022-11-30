@@ -6,6 +6,7 @@
   &__wrapper {
     overflow: hidden;
     position: relative;
+    border-radius: $cards-border-radius;
     z-index: 1;
 
     &::after {
