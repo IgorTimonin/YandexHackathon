@@ -6,9 +6,13 @@
   min-width: 1180px;
   min-height: 720px;
   box-sizing: border-box;
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-grow: 1;
+
+  &_visible {
+    display: flex;
+  }
 
   &__title {
     margin: 0;
@@ -38,6 +42,7 @@
 
   &__screen {
     display: none;
+    position: relative;
 
     &_visible {
       display: flex;
@@ -46,6 +51,13 @@
       flex-grow: 1;
       justify-content: space-between;
     }
+  }
+
+  &__screen-bottom {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   &__fields {
@@ -85,7 +97,7 @@
   &__checkbox-hidden {
     display: none;
 
-    &:checked + .quizz-form__checkbox-visible {
+    &:checked+.quizz-form__checkbox-visible {
       background-image: url('./images/checkbox-fill.svg');
     }
   }
@@ -103,6 +115,32 @@
 
     &:active {
       transform: scale(.97);
+    }
+  }
+
+  &__screen-number {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__bg-image {
+    position: absolute;
+    background: center / contain no-repeat;
+    right: -32px;
+    bottom: 0;
+
+    &_number_first {
+
+      width: 415px;
+      height: 487px;
+      background-image: url('./images/playstation.png');
+    }
+
+    &_number_second {
+      width: 543px;
+      height: 487px;
+      background-image: url('./images/dandy.png');
     }
   }
 }

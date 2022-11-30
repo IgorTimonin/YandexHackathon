@@ -35,6 +35,15 @@
     &_alone{
       display: initial;
     }
+
+    &:hover {
+      opacity: .8;
+      transform: scale(1.03);
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
   }
 
   &__links{

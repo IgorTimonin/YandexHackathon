@@ -12,14 +12,22 @@ const slider = new Slider({
   slidesInRow: 3,
 })
 
-const popup = new Popup({
+const quizzPopup = new Popup({
   popupSelector: '.popup_type_quizz',
   openedClass: 'popup_opened',
   closeBtnSelector: '.popup__close-btn',
 });
 
 const startQuizzBtn = document.querySelector('.quizz__btn');
-startQuizzBtn.addEventListener('click', () => popup.open());
+startQuizzBtn.addEventListener('click', () => quizzPopup.open());
 
-popup.addListeners();
+quizzPopup.addListeners();
 slider.enable();
+
+const handleQuizzEnd = () => {
+  quizzPopup.close();
+  location.hash = '#vacancy';
+}
+
+const quizzResultButtons = document.querySelectorAll('.quizz-result__button');
+quizzResultButtons.forEach(button => button.addEventListener('click', handleQuizzEnd))
