@@ -1,0 +1,126 @@
+.vacancy-header{
+  background-color: $accent-light-blue-color;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  width: 100%;
+
+  @media(max-width: $screen-lg) {
+    width: calc(100% - 40px);
+  }
+
+  &__nav-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 402px;
+    align-items: center;
+    @media(max-width: $screen-m) {
+      width: 210px;
+    }
+
+    @media(max-width: $screen-s) {
+      width: initial;
+    }
+  }
+
+  &__btn{
+    border-radius: 120px;
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $light-text-color;
+    border: 0;
+    background-color: $black-color;
+    height: 32px;
+    width: 118px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+
+    &_big{
+      width: 182px;
+      height: 60px;
+      background: $btn-footer-color;
+      font-size: 20px;
+      line-height: 20px;
+
+      @media(max-width: $screen-m) {
+        width: 118px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+
+    }
+  }
+
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 252px;
+  }
+
+  &__text{
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+
+    @media(max-width: $screen-m) {
+      display: none;
+    }
+
+  }
+
+  &__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @media(max-width: $screen-s) {
+      display: none;
+    }
+  }
+
+  &__link{
+    list-style-type: none;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+
+  &__icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+
+
+    &_wup{
+      background-image: url("images/wup_icon.svg");
+    }
+
+    &_tg{
+      background-image: url("images/tg_icon.svg");
+    }
+  }
+
+}
+
+
