@@ -15,6 +15,7 @@ $cards-bg-color: #fff;
 $cards-border-radius: 16px;
 $accent-blue-color: #5686E3;
 $light-text-color: #fff;
+$btn-footer-color: #262626;
 
 //Mixins
 
@@ -51,3 +52,10 @@ $light-text-color: #fff;
   font-weight: 500;
   line-height: 130%;
 }
+
+//разрешения экрана
+$screen-xs: 320px;
+$screen-s: 480px;
+$screen-m: 768px;
+$screen-lg: 1220px;
+$screen-xlg: 1440px;

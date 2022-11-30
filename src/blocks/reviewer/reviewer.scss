@@ -1,0 +1,60 @@
+.reviewer{
+  background: $accent-light-blue-color;
+  border-radius: 16px;
+  padding: 40px;
+  margin-top: 4px;
+
+  @media(max-width: $screen-m) {
+    padding: 40px 20px;
+  }
+
+  @media(max-width: $screen-s) {
+    padding: 20px;
+  }
+
+  &__link {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: $black-color;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+
+    @media(max-width: $screen-s) {
+      font-size: 12px;
+    }
+  }
+
+  &__title{
+    font-family: $font-family-section-titles;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    margin: 40px 0;
+
+    @media(max-width: $screen-m) {
+      font-size: 32px;
+      margin: 20px 0;
+    }
+  }
+
+  &__text{
+    max-width: 880px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+
+    @media(max-width: $screen-m) {
+      font-size: 16px;
+    }
+  }
+}

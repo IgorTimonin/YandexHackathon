@@ -6,12 +6,12 @@
 
     &::after {
       content: '';
-      width: 60px;
-      height: 60px;
-      background: url('./images/pencil.svg');
+      width: 80px;
+      height: 71px;
+      background: no-repeat center/100% url('./images/heard-arrow.svg');
       position: absolute;
-      right: -76px;
-      top: -5px;
+      right: -102px;
+      top: -17px;
     }
   }
 
@@ -34,6 +34,15 @@
 
     &_alone{
       display: initial;
+    }
+
+    &:hover {
+      opacity: .8;
+      transform: scale(1.03);
+    }
+
+    &:active {
+      transform: scale(.97);
     }
   }
 
@@ -103,28 +112,28 @@
     z-index: 1;
 
     &_c{
-      max-width: 219px;
+      max-width: 232px;
     }
 
     &_sql{
-      max-width: 216px;
+      max-width: 210px;
     }
 
     &_it{
-      max-width: 217px;
+      max-width: 210px;
       border-radius: 0 16px 16px 0;
     }
 
     &_figma{
-      max-width: 244px;
+      max-width: 217.33px;
     }
 
     &_traffic{
-      max-width: 174px;
+      max-width: 217.33px;
     }
 
     &_eng{
-      width: 187px;
+      width: 170.33px;
     }
 
     &_all{

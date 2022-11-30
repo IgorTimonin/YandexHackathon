@@ -7,12 +7,19 @@
   padding: 12px 20px;
   max-width: 1140px;
   width: 100%;
+  top: 12px;
+  z-index: 100;
+  position: fixed;
 
   &__logo {
     display: block;
     background-image: url("images/header__logo.svg");
     width: 163px;
     height: 30px;
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
   }
 
   &__questions {
@@ -38,6 +45,10 @@
     font-size: 14px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.85);
+
+    &:hover {
+      opacity: .8;
+    }
   }
 
   &__button {
@@ -48,8 +59,16 @@
     line-height: 18px;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 120px;
     background-color: black;
     padding: 9px 16px;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
   }
 }
