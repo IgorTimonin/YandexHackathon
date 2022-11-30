@@ -1,5 +1,5 @@
 import './app.scss'
-import Slider from './blocks/slider/slider';
+import Slider from './blocks/slider/slider.js';
 
 const slider = new Slider({
   sliderSelector: '.slider',
