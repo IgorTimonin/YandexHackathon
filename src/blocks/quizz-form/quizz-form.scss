@@ -6,9 +6,13 @@
   min-width: 1180px;
   min-height: 720px;
   box-sizing: border-box;
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-grow: 1;
+
+  &_visible {
+    display: flex;
+  }
 
   &__title {
     margin: 0;

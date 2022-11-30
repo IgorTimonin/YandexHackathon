@@ -527,7 +527,7 @@
     <div class="popup popup_type_quizz">
       <div class="popup__inner">
         <button class="popup__close-btn" type="button"></button>
-        <div class="quizz-form">
+        <div class="quizz-form quizz-form_visible">
           <h3 class="quizz-form__title">Найди свой путь в Яндекс Практикуме!</h3>
           <p class="quizz-form__subtitle">Выбери утверждения, которые лучше описывают тебя</p>
           <form name="quizz" class="quizz-form__form">
@@ -552,7 +552,8 @@
                 <label class="quizz-form__answer">
                   <input data-answer="review" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
                   <div class="quizz-form__checkbox-visible"></div>
-                  <span class="quizz-form__answer-text">Мне нравится простыми словами объяснять студентам их ошибки</span>
+                  <span class="quizz-form__answer-text">Мне нравится простыми словами объяснять студентам
+                    их ошибки</span>
                 </label>
                 <label class="quizz-form__answer">
                   <input data-answer="mentor" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
@@ -593,6 +594,36 @@
               </button>
             </div>
           </form>
+        </div>
+        <div class="quizz-result quizz-result_type_duo">
+          <div class="quizz-result__text">
+            <h3 class="quizz-result__title">А Серёжа у нас амбидекстр… Поздравляем, ты будешь одинаково хорош_а в обеих
+              ролях!</h3>
+            <p class="quizz-result__subtitle">Определись, какая роль тебе ближе: <span
+                class="quizz-result__text-lined">ангела или демона</span> контролёра
+              или консультанта. Для этого советуем почитать описания ролей</p>
+            <button type="button" class="quizz-result__button">К открытым позициям</button>
+          </div>
+          <img src="<%=require('./images/mentor-review.jpg')%>" alt="Хорош во всём" class="quizz-result__image">
+        </div>
+        <div class="quizz-result quizz-result_type_mentor">
+          <div class="quizz-result__text">
+            <h3 class="quizz-result__title">Профессионализм, забота, эмпатия… Кто тут у нас настоящий <span
+                class="quizz-result__text-accent">наставник</span>?</h3>
+            <p class="quizz-result__subtitle">У наших наставников золотое сердце, бездна знаний и опыта.
+              И, конечно же, они готовы делиться всем этим со своими студентами</p>
+            <button type="button" class="quizz-result__button">К открытым позициям</button>
+          </div>
+          <img src="<%=require('./images/mentor.jpg')%>" alt="Наставник" class="quizz-result__image">
+        </div>
+        <div class="quizz-result quizz-result_type_review">
+          <div class="quizz-result__text">
+            <h3 class="quizz-result__title"><span class="quizz-result__text-lined">Строгий</span> добрый
+              и справедливый…</br>Без такого <span class="quizz-result__text-accent">ревьюера</span> нам не обойтись!</h3>
+            <p class="quizz-result__subtitle">Зоркий глаз, быстрый ум, каждое слово на вес золота. Наши ревьюеры хорошо понимают, как важна обратная связь в процессе обучения</p>
+            <button type="button" class="quizz-result__button">К открытым позициям</button>
+          </div>
+          <img src="<%=require('./images/review.jpg')%>" alt="Ревьюер" class="quizz-result__image">
         </div>
       </div>
     </div>
