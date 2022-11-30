@@ -1,7 +1,7 @@
 .quizz-form {
   background: $accent-light-blue-color;
   height: 100%;
-  padding: 72px 127px 80px 72px;
+  padding: 72px 127px 72px 72px;
   border-radius: $cards-border-radius;
   min-width: 1180px;
   min-height: 720px;
@@ -37,14 +37,14 @@
   }
 
   &__screen {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-grow: 1;
-    justify-content: space-between;
+    display: none;
 
-    &_number_second {
-      display: none;
+    &_visible {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+      justify-content: space-between;
     }
   }
 
@@ -72,7 +72,7 @@
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.02);
+      opacity: .9;
     }
   }
 

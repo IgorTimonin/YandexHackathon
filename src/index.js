@@ -1,6 +1,7 @@
 import './app.scss'
 import Slider from './blocks/slider/slider.js';
 import Popup from './blocks/popup/popup';
+import './blocks/quizz-form/quizz-form.js';
 
 const slider = new Slider({
   sliderSelector: '.slider',
@@ -12,13 +13,13 @@ const slider = new Slider({
 })
 
 const popup = new Popup({
-  popupSelector: '.popup',
+  popupSelector: '.popup_type_quizz',
   openedClass: 'popup_opened',
   closeBtnSelector: '.popup__close-btn',
 });
 
-const quizBtn = document.querySelector('.quizz__btn');
-quizBtn.addEventListener('click', () => popup.open());
+const startQuizzBtn = document.querySelector('.quizz__btn');
+startQuizzBtn.addEventListener('click', () => popup.open());
 
 popup.addListeners();
 slider.enable();
