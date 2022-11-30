@@ -1,7 +1,13 @@
 import './app.scss'
+import Slider from './blocks/slider/slider';
 
-const numbers = [2, 3, 5];
+const slider = new Slider({
+  sliderSelector: '.slider',
+  prevBtnSelector: '.slider__control_type_prev',
+  nextBtnSelector: '.slider__control_type_next',
+  sliderContainerSelector: '.slider__inner',
+  sliderItemSelector: '.slider__item',
+  slidesInRow: 3,
+})
 
-const doubledNumbers = numbers.map(number => number * 2);
-
-console.log(doubledNumbers);
+slider.enable();
