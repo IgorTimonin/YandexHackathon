@@ -47,3 +47,19 @@
     }
   }
 }
+
+.popup_type_contacts{
+
+}
+
+.popup__inner{
+  width: 760px;
+
+  @media(max-width: $screen-m){
+    width: calc(100% - 80px);
+  }
+
+  @media(max-width: $screen-s){
+    width: calc(100% - 20px);
+  }
+}

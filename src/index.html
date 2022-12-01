@@ -1,357 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HackathonYandex</title>
-  </head>
-
-  <!-- <body>
-    <div class="page">
-      <div class="layout">
-        <header class="header">
-          <a
-            class="header__logo"
-            target="_blank"
-            href="https://practicum.yandex.ru/"
-            alt="Главная яндекс практикума"
-          ></a>
-          <ul class="header__questions">
-            <li class="header__question-text">
-              <a class="header__question" href="#"
-                >Преимущества сотрудничества</a
-              >
-            </li>
-            <li class="header__question-text">
-              <a class="header__question" href="#">Направления обучения</a>
-            </li>
-            <li class="header__question-text">
-              <a class="header__question" href="#">Отзывы</a>
-            </li>
-            <li class="header__question-text">
-              <a class="header__question" href="#">Частые вопросы</a>
-            </li>
-          </ul>
-          <button class="header__button">Кого мы ищем</button>
-        </header>
-
-        <main class="content">
-          <section class="section1 main-width-block">
-            <div class="section1__main">
-              <div class="section1__text">
-                <h2 class="section1__title">
-                  Станьте наставником или ревьюером
-                </h2>
-                <h2 class="section1__subtitle">и делитесь своим опытом</h2>
-                <p class="section1__description">
-                  Ищем наставников и ревьюеров для программирования, анализа
-                  данных, менеджмента, маркетинга или дизайна
-                </p>
-                <button class="section1__btn btn">
-                  Почему Яндекс Практикум?
-                </button>
-              </div>
-              <img
-                class="section1__img"
-                src="<%=require('./images/title-photo.jpg')%>"
-                alt="девушка в голубой рубашке"
-              />
-            </div>
-            <div class="quizz">
-              <div class="quizz__info">
-                <h3 class="quizz__title">Кто ты?</h3>
-                <p class="quizz__text">
-                  Ответь на вопросы, а мы подскажем какая роль тебе подходит
-                </p>
-              </div>
-              <button class="quizz__btn btn">Выбери своего игрока!</button>
-            </div>
-          </section> -->
-
-
-          <!-- <section class="vacancy main-width-block">
-            <h2 class="section-title vacancy__title">Кого мы ищем</h2>
-            <form class="vacancy__filter">
-              <select class="vacancy__filter-job">
-                <option selected>Для наставников</option>
-                <option>Для ревьюеров</option>
-              </select>
-              <fieldset class="vacancy__filter-items">
-                <input
-                  name="vacancy-type"
-                  value="programming"
-                  id="vacancy1"
-                  class="vacancy__filter-radio"
-                  type="radio"
-                />
-                <label for="vacancy1" class="vacancy__filter-item"
-                  >Аналитика</label
-                >
-                <input
-                  checked
-                  name="vacancy-type"
-                  value="analys"
-                  id="vacancy2"
-                  class="vacancy__filter-radio"
-                  type="radio"
-                />
-                <label for="vacancy2" class="vacancy__filter-item"
-                  >Программирование</label
-                >
-                <input
-                  name="vacancy-type"
-                  value="design"
-                  id="vacancy3"
-                  class="vacancy__filter-radio"
-                  type="radio"
-                />
-                <label for="vacancy3" class="vacancy__filter-item"
-                  >Дизайн</label
-                >
-                <input
-                  name="vacancy-type"
-                  value="marketing"
-                  id="vacancy4"
-                  class="vacancy__filter-radio"
-                  type="radio"
-                />
-                <label for="vacancy4" class="vacancy__filter-item"
-                  >Маркетинг</label
-                >
-                <input
-                  name="vacancy-type"
-                  value="management"
-                  id="vacancy5"
-                  class="vacancy__filter-radio"
-                  type="radio"
-                />
-                <label for="vacancy5" class="vacancy__filter-item"
-                  >Менеджмент</label
-                >
-              </fieldset>
-            </form>
-            <ul class="vacancy__results">
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-              <li class="vacancy__results-item">
-                <h3 class="vacancy__results-item-title">
-                  Наставник на курс "Мидл фронтенд-разработчик"
-                </h3>
-                <div class="vacancy__results-item-description">
-                  <p class="vacancy__results-item-paragraph">
-                    [Оплата за ведение группы]
-                  </p>
-                  <p class="vacancy__results-item-paragraph">
-                    [В среднем 35000 &#8381; в месяц]
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <div class="vacancy__banner">
-              <div class="vacancy__banner-heading">
-                <h3 class="vacancy__banner-title">
-                  Не нашёл подходящее предложение?
-                </h3>
-                <p class="vacancy__banner-subtitle">
-                  Оставь контакты и мы подберём тебе роль в нашей коменде
-                </p>
-              </div>
-              <button class="vacancy__banner-button" type="button">
-                Оставить отклик
-              </button>
-            </div>
-          </section>
-          <section class="questions main-width-block">
-            <h2 class="section-title">Нас часто спрашивают...</h2>
-            <ul class="questions__accordeon">
-              <li class="questions__accordeon-item">
-                <input
-                  class="questions__accordeon-checkbox"
-                  type="checkbox"
-                  id="rd1"
-                />
-                <label for="rd1" class="questions__accordeon-question">
-                  У меня совсем нет преподовательского опыта. Я могу вести у вас
-                  курсы?
-                </label>
-                <p class="questions__accordeon-content">
-                  У меня совсем нет преподовательского опыта. Я могу вести у вас
-                  курсы? У меня совсем нет преподовательского опыта. Я могу
-                  вести у вас курсы?
-                </p>
-              </li>
-              <li class="questions__accordeon-item">
-                <input
-                  class="questions__accordeon-checkbox"
-                  type="checkbox"
-                  id="rd2"
-                />
-                <label for="rd2" class="questions__accordeon-question">
-                  Какой график и формат работы?
-                </label>
-                <p class="questions__accordeon-content">
-                  У меня совсем нет преподовательского опыта. Я могу вести у вас
-                  курсы? У меня совсем нет преподовательского опыта. Я могу
-                  вести у вас курсы?
-                </p>
-              </li>
-              <li class="questions__accordeon-item">
-                <input
-                  class="questions__accordeon-checkbox"
-                  type="checkbox"
-                  id="rd3"
-                />
-                <label for="rd3" class="questions__accordeon-question">
-                  Как меня введут в работу? И помогут ли, если появятся вопросы?
-                </label>
-                <p class="questions__accordeon-content">
-                  У меня совсем нет преподовательского опыта. Я могу вести у вас
-                  курсы? У меня совсем нет преподовательского опыта. Я могу
-                  вести у вас курсы?
-                </p>
-              </li>
-              <li class="questions__accordeon-item">
-                <input
-                  class="questions__accordeon-checkbox"
-                  type="checkbox"
-                  id="rd4"
-                />
-                <label for="rd4" class="questions__accordeon-question">
-                  Смогу ли я работать на нескольких направлениях, если обладаю
-                  экчпертизой в каждом из них?
-                </label>
-                <p class="questions__accordeon-content">
-                  У меня совсем нет преподовательского опыта. Я могу вести у вас
-                  курсы? У меня совсем нет преподовательского опыта. Я могу
-                  вести у вас курсы?
-                </p>
-              </li>
-              <li class="questions__accordeon-item">
-                <input
-                  class="questions__accordeon-checkbox"
-                  type="checkbox"
-                  id="rd5"
-                />
-                <label for="rd5" class="questions__accordeon-question">
-                  Я не гражданин России, смогу ли я сотрудничать?
-                </label>
-                <p class="questions__accordeon-content">
-                  У меня совсем нет преподовательского опыта. Я могу вести у вас
-                  курсы? У меня совсем нет преподовательского опыта. Я могу
-                  вести у вас курсы?
-                </p>
-              </li>
-            </ul>
-          </section>
-        </main>
-
-        <footer class="footer"></footer>
-      </div>
-    </div>
-  </body>
-</html> -->
 
 <head>
   <meta charset="UTF-8">
@@ -949,9 +597,98 @@
         </div>
       </div>
     </div>
+
     <div class="popup popup_type_contacts">
       <div class="popup__inner">
         <button class="popup__close-btn" type="button"></button>
+        <form class="vacancy-form" name="popup__form" id="popup__form_edit">
+          <h2 class="vacancy-form__title">Не нашли себя в открытых предложениях?
+            Оставьте свои контакты</h2>
+          <fieldset class="vacancy-form__fieldset">
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">ФИО</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Почта</p>
+              <div class="vacancy-form__input-box">
+                <input type="email" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Telegram или телефон</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Telegram или телефон</p>
+              <div class="vacancy-form__input-box ">
+                <div class="vacancy-form__radio-box">
+                  <div>
+                    <input type="radio" class="vacancy-form__input-radio" id="mentor" value="mentor" name="job">
+                    <span class="vacancy-form__span-radio vacancy-form__span-radio-visible"></span>
+                    <label class="vacancy-form__label-radio" for="mentor">Наставник</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="vacancy-form__input-radio" id="reviewer" value="reviewer" name="job">
+                    <span class="vacancy-form__span-radio vacancy-form__span-radio-visible"></span>
+                    <label class="vacancy-form__label-radio" for="reviewer">Ревьюер</label>
+                  </div>
+                </div>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Выберите направление (факультет)</p>
+              <div class="vacancy-form__input-box">
+                <select required class="vacancy-form__select">
+                  <option selected disabled></option>
+                  <option value="программирование" >программирование</option>
+                  <option value="дизайн" >дизайн</option>
+                  <option value="макетиг" >макетиг</option>
+                  <option value="англ. яз" >англ. яз</option>
+                  <option value="менеджмент" >менеджмент</option>
+                </select>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box vacancy-form__box_ta">
+              <p class="vacancy-form__input-title vacancy-form__input-title_ta">Перечислите набор технологий, которыми вы владеете и уровень владения каждой</p>
+              <textarea class="vacancy-form__textarea" required></textarea>
+              <span class="vacancy-form__span">error</span>
+
+            </div>
+
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Ссылка на резюме (пожалуйста, проверте, что вы открыли доступ к докумену )</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+
+              </div>
+            </div>
+            <div class="vacancy-form__box vacancy-form__box_cb">
+              <input class="quizz-form__checkbox-hidden" type="checkbox">
+              <div class="quizz-form__checkbox-visible"></div>
+              <p class="vacancy-form__input-title vacancy-form__input-title_cb">Я даю согласие АНО ДПО "ШАД" ООО "ЯНДЕКС" на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.</p>
+
+            </div>
+
+          </fieldset>
+          <button class="vacancy-form__button" type="submit" aria-label="Сохранить">Отправить</button>
+        </form>
       </div>
     </div>
   </div>
