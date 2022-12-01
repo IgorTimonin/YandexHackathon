@@ -28,49 +28,56 @@
     padding: 20px;
     border-radius: 30px 30px 0 0;
     background-color: $cards-bg-color;
-    // width: 300px;
   }
 
   &__card:nth-child(1) {
-    top: -410px;
+    top: -450px;
     left: -30px;
     border-bottom-left-radius: 30px;
     max-width: 324px;
+    transition: all 2s;
+    transition-delay: 1s;
   }
 
   &__card:nth-child(2) {
-    top: -160px;
+    top: -270px;
     left: -30px;
     border-bottom-left-radius: 30px;
     max-width: 324px;
+    transition: all 2s;
+    transition-delay: 1s;
   }
 
   &__card:nth-child(3) {
     top: -520px;
     left: 370px;
     border-radius: 30px;
-    width: 226px;
+    width: 260px;
+    transition: all 2s;
   }
 
   &__card:nth-child(4) {
-    top: -160px;
-    left: 715px;
+    top: -355px;
+    left: 675px;
     border-bottom-right-radius: 30px;
-    width: 235px;
+    width: 260px;
+    transition: all 2s;
+    transition-delay: 0.5s;
   }
 
   &__card:nth-child(5) {
-    top: -408px;
-    left: 716px;
+    top: -150px;
+    left: 675px;
     border-bottom-right-radius: 30px;
-    width: 212px;
+    width: 260px;
+    transition: all 2s;
+    transition-delay: 0.5s;
   }
 
   &__card-title {
     margin: 0;
-    text-align: center;
     vertical-align: middle;
-    // margin-bottom: 12px;
+    margin-bottom: 12px;
     font-family: 'YS Text';
     font-style: normal;
     font-weight: 500;
@@ -79,7 +86,6 @@
   }
 
   &__card-text {
-    display: none;
     margin: 0;
     font-family: 'YS Text';
     font-style: normal;
@@ -91,8 +97,12 @@
 
   &__btn {
     @include button;
-    background-color: $accent-yellow-color;
+    background-color: $content-primary-color;
+    color:$light-text-color;
     margin-bottom: 60px;
+    &:hover {
+      background-color: $hover-blue;
+    }
   }
 
   &__animation {
@@ -102,7 +112,6 @@
 
   &__show {
     opacity: 1;
-    transition: all 2s;
     transform: translateY(0%);
   }
 }
