@@ -1,0 +1,5 @@
+.main-second-page{
+  @media(max-width: $screen-lg) {
+    width: calc(100% - 40px);
+  }
+}

@@ -1,5 +1,4 @@
 $font-family: 'YS Text', Helvetica, sans-serif;
-$font-family-primary: 'YS Sans', Helvetica, sans-serif;
 $font-family-section-titles: 'YS Display', Helvetica, sans-serif;
 $primary-color: #bada55;
 $light-text-color: #fff;
@@ -15,6 +14,9 @@ $black-color: #000;
 $cards-bg-color: #fff;
 $hover-blue: #5686E3; //Цвет взят из палитры дизайнеров, но не факт что это нужный
 $cards-border-radius: 16px;
+$accent-blue-color: #5686E3;
+$light-text-color: #fff;
+$btn-footer-color: #262626;
 
 //Mixins
 
@@ -54,3 +56,10 @@ $cards-border-radius: 16px;
   font-weight: 500;
   line-height: 130%;
 }
+
+//разрешения экрана
+$screen-xs: 320px;
+$screen-s: 480px;
+$screen-m: 768px;
+$screen-lg: 1220px;
+$screen-xlg: 1440px;

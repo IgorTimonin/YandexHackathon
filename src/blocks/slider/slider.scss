@@ -1,0 +1,125 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    overflow: hidden;
+    position: relative;
+    border-radius: $cards-border-radius;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $accent-light-blue-color;
+      border-radius: $cards-border-radius;
+      height: 300px;
+      z-index: -1;
+      margin-right: 1px; // фикс ширины подложки
+    }
+  }
+
+  &__inner {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 12px;
+    transition: transform .3s ease-out;
+  }
+
+  &__item {
+    flex-basis: 385px;
+    flex-shrink: 0;
+    margin-bottom: 32px;
+  }
+
+  &__item-inner {
+    background: $cards-bg-color;
+    border-radius: $cards-border-radius;
+    margin-bottom: 20px;
+
+    &_type_text {
+      padding: 32px 40px;
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__item-caption {
+    margin: 0 24px;
+  }
+
+  &__item-person {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__item-profession {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__control {
+    width: 72px;
+    height: 48px;
+    border: none;
+    background: center / contain no-repeat;
+    padding: 0;
+    cursor: pointer;
+
+    &_type_prev {
+      background-image: url('./images/slide-prev.svg');
+      margin-right: 16px;
+    }
+
+    &_type_next {
+      background-image: url('./images/slide-next.svg');
+      margin-left: 16px;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
+
+    &:disabled {
+      filter: invert(1);
+
+      &:hover {
+        opacity: unset;
+        cursor: unset;
+      }
+
+      &:active {
+        transform: none;
+      }
+    }
+  }
+}

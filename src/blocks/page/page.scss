@@ -5,5 +5,7 @@
   flex-grow: 1;
   min-height: 100vh;
   background: $primary-bg-color;
-  font-family: $font-family-primary;
+  font-family: $font-family;
+  padding: 12px 0;
+  color: $primary-text-color;
 }

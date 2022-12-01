@@ -1,0 +1,190 @@
+.teaching{
+
+  &__title {
+    width: fit-content;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 80px;
+      height: 71px;
+      background: no-repeat center/100% url('./images/heard-arrow.svg');
+      position: absolute;
+      right: -102px;
+      top: -17px;
+    }
+  }
+
+  &__box{
+    margin-bottom: 198px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__link{
+    display: grid;
+    grid-template-columns: 128px auto;
+    text-decoration: none;
+    color: #000000;
+
+    &_right{
+      grid-template-columns: auto 128px;
+    }
+
+    &_alone{
+      display: initial;
+    }
+
+    &:hover {
+      opacity: .8;
+      transform: scale(1.03);
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
+  }
+
+  &__links{
+    display: flex;
+    column-gap: 4px;
+  }
+
+  &__course-title{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0;
+
+    color: $black-color;
+
+    &_light{
+      color: $light-text-color;
+    }
+  }
+
+  &__course-subtitle{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin: 12px 0;
+    height: 106px;
+  }
+
+  &__course-subtitle_s{
+    height: 125px;
+    margin: 4px 0;
+  }
+
+  &__course-amount{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $blank-focus-color;
+    margin: 0;
+
+    &_dark{
+      color: $black-color;
+    }
+
+    &_light{
+      color: $light-text-color;
+    }
+  }
+
+  &__course{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    z-index: 1;
+
+    &_c{
+      max-width: 232px;
+    }
+
+    &_sql{
+      max-width: 210px;
+    }
+
+    &_it{
+      max-width: 210px;
+      border-radius: 0 16px 16px 0;
+    }
+
+    &_figma{
+      max-width: 217.33px;
+    }
+
+    &_traffic{
+      max-width: 217.33px;
+    }
+
+    &_eng{
+      width: 170.33px;
+    }
+
+    &_all{
+      width: 123px;
+      background-color: $black-color;
+    }
+  }
+
+  &__course-box{
+    width: 140px;
+    background: $accent-light-blue-color;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2214px;
+    line-height: 120%;
+
+    &_left{
+      border-radius: 0 16px 16px 0;
+      position: relative;
+      right: 12px;
+    }
+
+    &_blue{
+      background: $accent-blue-color;
+      color: $light-text-color;
+    }
+
+    &_yellow{
+      background: $accent-yellow-color;
+    }
+  }
+
+
+
+  &__course-box-text{
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2214px;
+    line-height: 120%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #161616;
+  }
+}
+
