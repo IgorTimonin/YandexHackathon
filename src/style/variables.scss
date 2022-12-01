@@ -12,6 +12,7 @@ $primary-text-color: #000;
 $content-primary-color: #000;
 $black-color: #000;
 $cards-bg-color: #fff;
+$hover-blue: #5686E3; //Цвет взят из палитры дизайнеров, но не факт что это нужный
 $cards-border-radius: 16px;
 $accent-blue-color: #5686E3;
 $light-text-color: #fff;
@@ -32,6 +33,9 @@ $btn-footer-color: #262626;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  &:hover {
+    opacity: 0.85;
+  }
 }
 
 //отступ слева в большинстве блоков
