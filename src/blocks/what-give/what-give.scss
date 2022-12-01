@@ -4,26 +4,38 @@
   &__container {
     @include cards-border-radius;
     background-image: url('images/bg-what-give.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    margin: 0 20px;
+    @media screen and (max-width: 900px) {
+      background-size: clip;
+    }
   }
 
   &__cards-list {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 260px);
-    gap: 50px;
+    // grid-template-columns: repeat(3, 270px);
+    // gap: 50px;
     align-items: center;
     justify-items: center;
     position: relative;
+    @media screen and (max-width: 1040px) {
+    }
   }
 
   &__card {
     position: absolute;
     top: 0;
-    left: 0;
     list-style: none;
     padding: 20px;
     border-radius: 30px 30px 0 0;
@@ -31,47 +43,73 @@
   }
 
   &__card:nth-child(1) {
-    top: -450px;
-    left: -30px;
+    top: 25%;
+    left: 6vw;
     border-bottom-left-radius: 30px;
-    max-width: 324px;
+    width: 290px;
     transition: all 2s;
     transition-delay: 1s;
+    @media screen and (max-width: 1040px) {
+      top: 40%;
+    }
   }
 
   &__card:nth-child(2) {
-    top: -270px;
-    left: -30px;
+    // top: -270px;
+    // left: -90px;
+    top: 55%;
+    left: 6vw;
     border-bottom-left-radius: 30px;
-    max-width: 324px;
+    width: 250px;
     transition: all 2s;
     transition-delay: 1s;
+    @media screen and (max-width: 1040px) {
+      max-width: 139px;
+      top: 75%;
+    }
   }
 
   &__card:nth-child(3) {
-    top: -520px;
-    left: 370px;
+    // top: -520px;
+    // left: 280px;
+    top: 5%;
+    left: calc(50% - 115px);
     border-radius: 30px;
-    width: 260px;
+    width: 230px;
     transition: all 2s;
+    @media screen and (max-width: 1080px) {
+      left: calc(50% - 97px);
+      top: 10%;
+    }
   }
 
   &__card:nth-child(4) {
-    top: -355px;
-    left: 675px;
+    // top: -150px;
+    // left: 600px;
+    top: 55%;
+    right: 3vw;
     border-bottom-right-radius: 30px;
-    width: 260px;
+    width: 240px;
     transition: all 2s;
     transition-delay: 0.5s;
+    @media screen and (max-width: 1040px) {
+    }
+    @media screen and (max-width: 900px) {
+    }
   }
 
   &__card:nth-child(5) {
-    top: -150px;
-    left: 675px;
+    top: 25%;
+    right: 3em;
     border-bottom-right-radius: 30px;
-    width: 260px;
+    width: 220px;
     transition: all 2s;
     transition-delay: 0.5s;
+    @media screen and (max-width: 1040px) {
+      right: 3em;
+    }
+    @media screen and (max-width: 900px) {
+    }
   }
 
   &__card-title {
@@ -83,6 +121,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
+    @media screen and (max-width: 1040px) {
+      text-align: center;
+      margin: 0;
+    }
   }
 
   &__card-text {
@@ -93,12 +135,15 @@
     font-size: 16px;
     line-height: 130%;
     max-width: 284px;
+    @media screen and (max-width: 1040px) {
+      display: none;
+    }
   }
 
   &__btn {
     @include button;
     background-color: $content-primary-color;
-    color:$light-text-color;
+    color: $light-text-color;
     margin-bottom: 60px;
     &:hover {
       background-color: $hover-blue;
