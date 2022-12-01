@@ -2,12 +2,6 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HackathonYandex</title>
-</head>
-
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HackathonYandex</title>
@@ -592,9 +586,98 @@
         </div>
       </div>
     </div>
+
     <div class="popup popup_type_contacts">
-      <div class="popup__inner">
+      <div class="popup__inner popup__inner-contacts">
         <button class="popup__close-btn" type="button"></button>
+        <form class="vacancy-form" name="popup__form" id="popup__form_edit">
+          <h2 class="vacancy-form__title">Не нашли себя в открытых предложениях?
+            Оставьте свои контакты</h2>
+          <fieldset class="vacancy-form__fieldset">
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">ФИО</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Почта</p>
+              <div class="vacancy-form__input-box">
+                <input type="email" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Telegram или телефон</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Telegram или телефон</p>
+              <div class="vacancy-form__input-box ">
+                <div class="vacancy-form__radio-box">
+                  <div>
+                    <input type="radio" class="vacancy-form__input-radio" id="mentor" value="mentor" name="job">
+                    <span class="vacancy-form__span-radio vacancy-form__span-radio-visible"></span>
+                    <label class="vacancy-form__label-radio" for="mentor">Наставник</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="vacancy-form__input-radio" id="reviewer" value="reviewer" name="job">
+                    <span class="vacancy-form__span-radio vacancy-form__span-radio-visible"></span>
+                    <label class="vacancy-form__label-radio" for="reviewer">Ревьюер</label>
+                  </div>
+                </div>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Выберите направление (факультет)</p>
+              <div class="vacancy-form__input-box">
+                <select required class="vacancy-form__select">
+                  <option selected disabled></option>
+                  <option value="программирование" >программирование</option>
+                  <option value="дизайн" >дизайн</option>
+                  <option value="макетиг" >макетиг</option>
+                  <option value="англ. яз" >англ. яз</option>
+                  <option value="менеджмент" >менеджмент</option>
+                </select>
+                <span class="vacancy-form__span">error</span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box vacancy-form__box_ta">
+              <p class="vacancy-form__input-title vacancy-form__input-title_ta">Перечислите набор технологий, которыми вы владеете и уровень владения каждой</p>
+              <textarea class="vacancy-form__textarea" required></textarea>
+              <span class="vacancy-form__span">error</span>
+
+            </div>
+
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Ссылка на резюме (пожалуйста, проверте, что вы открыли доступ к докумену )</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span">error</span>
+
+              </div>
+            </div>
+            <div class="vacancy-form__box vacancy-form__box_cb">
+              <input class="quizz-form__checkbox-hidden" type="checkbox">
+              <div class="quizz-form__checkbox-visible"></div>
+              <p class="vacancy-form__input-title vacancy-form__input-title_cb">Я даю согласие АНО ДПО "ШАД" ООО "ЯНДЕКС" на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.</p>
+
+            </div>
+
+          </fieldset>
+          <button class="vacancy-form__button" type="submit" aria-label="Сохранить">Отправить</button>
+        </form>
       </div>
     </div>
     <div class="popup popup_type_video">

@@ -1,0 +1,254 @@
+.vacancy-form{
+  padding: 72px 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media(max-width: $screen-m){
+    padding: 56px 40px;
+  }
+
+  @media(max-width: $screen-s){
+    padding: 56px 20px;
+  }
+
+  &__title{
+    font-family: $font-family-section-titles;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 0 40px 0;
+
+    @media(max-width: $screen-m){
+      font-size: 20px;
+      margin: 0 0 24px 0;
+    }
+  }
+
+}
+
+.vacancy-form__fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.vacancy-form__box{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+  max-width: 568px;
+  margin-bottom: 12px;
+
+  &:last-of-type{
+    margin-bottom: 0px;
+  }
+
+  @media(max-width: $screen-m){
+    flex-direction: column;
+  }
+
+  @media(max-width: $screen-s){
+    flex-direction: column;
+  }
+}
+
+.vacancy-form__box_ta{
+	flex-direction: column;
+}
+
+.vacancy-form__box_cb{
+  justify-content: initial;
+  margin-left: 12px;
+    @media(max-width: $screen-m){
+      flex-direction: row;
+    }
+
+    @media(max-width: $screen-s){
+      flex-direction: row;
+    }
+}
+
+.vacancy-form__input{
+  border: 2px solid #E0E0E0;
+  border-radius: 10px;
+  width: 316px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+
+  @media(max-width: $screen-m){
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+.vacancy-form__input-radio[type=radio]{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+}
+
+.vacancy-form__span-radio-visible{
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+  width: 24px;
+  background-image: url(./images/radio-off.svg);
+
+  @media(max-width: $screen-m){
+    margin-top: 8px;
+  }
+}
+
+.vacancy-form__input-radio[type=radio]:checked + .vacancy-form__span-radio{
+  background-image: url(./images/radio-on.svg);
+  height: 24px;
+  width: 24px;
+  overflow: visible;
+}
+
+.vacancy-form__span-radio:hover{
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.vacancy-form__label-radio{
+  margin-right: 40px;
+
+
+
+  @media(max-width: $screen-m){
+    margin-top: 8px;
+    font-size: 14px;
+  }
+}
+
+.vacancy-form__input-check{
+
+}
+
+.vacancy-form__select{
+  border: 2px solid #E0E0E0;
+  border-radius: 10px;
+  width: 317px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+
+  @media(max-width: $screen-m){
+    width: 100%;
+  }
+
+}
+
+
+.vacancy-form__textarea{
+	width: 100%;
+	height: 50px;
+	resize: none;
+  border: 2px solid #E0E0E0;
+  border-radius: 14px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.vacancy-form__span{
+	color: red;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+  height: 16px;
+}
+
+.vacancy-form__input-box{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.vacancy-form__radio-box{
+	display: flex;
+	flex-direction: row;
+  width: 316px;
+
+
+  @media(max-width: $screen-s){
+    flex-direction: column;
+  }
+}
+
+
+
+.vacancy-form__input-title{
+	margin: 0 0 0 12px;
+  width: 192px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media(max-width: $screen-m){
+    width: 100%;
+
+  }
+
+  &::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: no-repeat center/100% url('./images/star.svg');
+    position: absolute;
+    left: 96px;
+    @media(max-width: $screen-m){
+      left: 40px;
+
+    }
+    @media(max-width: $screen-s){
+      left: 20px;
+    }
+  }
+
+  &_ta{
+    width: 100%;
+  }
+
+  &_cb{
+    width: 100%;
+    margin-left: 12px;
+  }
+}
+
+
+.vacancy-form__button{
+  margin: 40px 0 0 0;
+  padding: 0;
+  width: 315px;
+  height: 60px;
+  border: 0;
+  border-radius: 120px;
+  color: $light-text-color;
+  background-color: $black-color;
+
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media(max-width: $screen-m){
+    width: 100%;
+    margin: 24px 0 0 0;
+  }
+}

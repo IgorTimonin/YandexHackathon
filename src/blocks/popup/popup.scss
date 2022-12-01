@@ -71,3 +71,15 @@
     aspect-ratio: 16 / 9;
   }
 }
+
+.popup__inner-contacts{
+  width: 760px;
+
+  @media(max-width: $screen-m){
+    width: calc(100% - 80px);
+  }
+
+  @media(max-width: $screen-s){
+    width: calc(100% - 20px);
+  }
+}
