@@ -1,0 +1,65 @@
+$font-family: 'YS Text', Helvetica, sans-serif;
+$font-family-section-titles: 'YS Display', Helvetica, sans-serif;
+$primary-color: #bada55;
+$light-text-color: #fff;
+$accent-yellow-color: #FCD559;
+$accent-light-blue-color: #AACCF1;
+$blank-focus-color: #B3B3B3;
+$primary-bg-color: #E9E9E9;
+$blue-gray-color: #F1F2F5;
+$link-check-base-color: #4D4D4D;
+$primary-text-color: #000;
+$content-primary-color: #000;
+$black-color: #000;
+$cards-bg-color: #fff;
+$hover-blue: #5686E3; //Цвет взят из палитры дизайнеров, но не факт что это нужный
+$cards-border-radius: 16px;
+$accent-blue-color: #5686E3;
+$light-text-color: #fff;
+$btn-footer-color: #262626;
+
+//Mixins
+
+//общий стиль button
+@mixin button {
+  padding: 20px 24px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 120px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+//отступ слева в большинстве блоков
+@mixin cards-left-padding {
+  padding-left: 40px;
+}
+
+//скругление блоков и элементов
+@mixin cards-border-radius {
+  border-radius: 16px;
+}
+
+//Общий стиль заголовков секций
+@mixin title-font {
+  margin: 0;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+//разрешения экрана
+$screen-xs: 320px;
+$screen-s: 480px;
+$screen-m: 768px;
+$screen-lg: 1220px;
+$screen-xlg: 1440px;
