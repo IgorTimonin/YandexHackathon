@@ -35,6 +35,7 @@
   &__button {
     @include button;
     background: $cards-bg-color;
+    text-decoration: none;
 
     &:hover {
       opacity: .8;

@@ -1,6 +1,7 @@
 import './app.scss'
 import Slider from './blocks/slider/slider.js';
 import Popup from './blocks/popup/popup';
+import VideoPopup from './blocks/popup/videoPopup';
 import './blocks/quizz-form/quizz-form.js';
 import './blocks/vacancy/vacancy.js';
 
@@ -60,3 +61,15 @@ contactsPopup.addListeners();
 
 const contactsFormBtn = document.querySelector('.vacancy__banner-button')
 contactsFormBtn.addEventListener('click', () => contactsPopup.open());
+
+const videoPopup = new VideoPopup({
+  popupSelector: '.popup_type_video',
+  openedClass: 'popup_opened',
+  closeBtnSelector: '.popup__close-btn',
+  videoIframeSelector: '.popup__video-iframe'
+});
+
+videoPopup.addListeners();
+
+const sliderVideoButtons = document.querySelectorAll('.slider__item-play-btn');
+sliderVideoButtons.forEach(btn => btn.addEventListener('click', () => videoPopup.open(btn.dataset.source)));
