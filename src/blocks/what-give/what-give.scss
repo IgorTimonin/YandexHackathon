@@ -16,6 +16,10 @@
     @media screen and (max-width: 900px) {
       background-size: clip;
     }
+    @media screen and (max-width: 480px) {
+      background-image: none;
+      height: auto;
+    }
   }
 
   &__cards-list {
@@ -24,12 +28,12 @@
     padding: 0;
     margin: 0;
     display: grid;
-    // grid-template-columns: repeat(3, 270px);
-    // gap: 50px;
     align-items: center;
     justify-items: center;
     position: relative;
     @media screen and (max-width: 1040px) {
+    }
+    @media screen and (max-width: 480px) {
     }
   }
 
@@ -40,75 +44,73 @@
     padding: 20px;
     border-radius: 30px 30px 0 0;
     background-color: $cards-bg-color;
+    transition: opacity 2s, transform 2s;
+    @media screen and (max-width: 480px) {
+      position: static;
+      margin-bottom: 4px;
+      width: 100% !important;
+      border-radius: 30px;
+      box-sizing: border-box;
+    }
   }
 
   &__card:nth-child(1) {
-    top: 25%;
-    left: 6vw;
-    border-bottom-left-radius: 30px;
-    width: 290px;
-    transition: all 2s;
-    transition-delay: 1s;
-    @media screen and (max-width: 1040px) {
-      top: 40%;
-    }
-  }
-
-  &__card:nth-child(2) {
-    // top: -270px;
-    // left: -90px;
-    top: 55%;
-    left: 6vw;
-    border-bottom-left-radius: 30px;
-    width: 250px;
-    transition: all 2s;
-    transition-delay: 1s;
-    @media screen and (max-width: 1040px) {
-      max-width: 139px;
-      top: 75%;
-    }
-  }
-
-  &__card:nth-child(3) {
-    // top: -520px;
-    // left: 280px;
     top: 5%;
     left: calc(50% - 115px);
     border-radius: 30px;
     width: 230px;
-    transition: all 2s;
+
     @media screen and (max-width: 1080px) {
       left: calc(50% - 97px);
       top: 10%;
     }
   }
 
-  &__card:nth-child(4) {
-    // top: -150px;
-    // left: 600px;
-    top: 55%;
-    right: 3vw;
-    border-bottom-right-radius: 30px;
-    width: 240px;
-    transition: all 2s;
+  &__card:nth-child(2) {
+    top: 25%;
+    left: 6vw;
+    border-bottom-left-radius: 30px;
+    width: 290px;
     transition-delay: 0.5s;
     @media screen and (max-width: 1040px) {
-    }
-    @media screen and (max-width: 900px) {
+      top: 40%;
     }
   }
 
-  &__card:nth-child(5) {
+  &__card:nth-child(3) {
+    top: 55%;
+    left: 6vw;
+    border-bottom-left-radius: 30px;
+    width: 250px;
+    transition-delay: 0.7s;
+    @media screen and (max-width: 1040px) {
+      top: 75%;
+    }
+  }
+
+  &__card:nth-child(4) {
     top: 25%;
     right: 3em;
     border-bottom-right-radius: 30px;
     width: 220px;
-    transition: all 2s;
-    transition-delay: 0.5s;
+    transition-delay: 0.9s;
     @media screen and (max-width: 1040px) {
       right: 3em;
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 480px) {
+    }
+  }
+
+  &__card:nth-child(5) {
+    top: 55%;
+    right: 3vw;
+    border-bottom-right-radius: 30px;
+    width: 240px;
+    transition-delay: 1.1s;
+    @media screen and (max-width: 1040px) {
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 8px;
     }
   }
 
@@ -125,6 +127,11 @@
       text-align: center;
       margin: 0;
     }
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+      text-align: start;
+      margin-bottom: 12px;
+    }
   }
 
   &__card-text {
@@ -137,6 +144,11 @@
     max-width: 284px;
     @media screen and (max-width: 1040px) {
       display: none;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+      display: block;
+      max-width: 100%;
     }
   }
 
