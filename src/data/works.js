@@ -4,7 +4,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Мидл фронтенд-разработчик"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 35000,
@@ -16,7 +16,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Python-разработчик" (ищем только в резерв)',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'from',
       value: 50000,
@@ -28,7 +28,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Мидл Python-разработчик" (ищем только в резерв)',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 50000,
@@ -40,7 +40,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Разработчик C++"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'from',
       value: 45000,
@@ -52,7 +52,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Java-разработчик"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'up',
       value: 45000,
@@ -64,7 +64,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Go-разработчик"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 45000,
@@ -76,7 +76,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Алгоритмы для разработчиков"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'from',
       value: 45000,
@@ -88,7 +88,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Инженер по тестированию"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'from',
       value: 45000,
@@ -100,7 +100,7 @@ export default [
     type: 'mentor',
     area: 'programming',
     title: 'Наставник на курс "Android-разработчик"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 45000,
@@ -112,7 +112,7 @@ export default [
     type: 'mentor',
     area: 'analytics',
     title: 'Наставник на курс "Аналитик данных"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 30000,
@@ -124,7 +124,7 @@ export default [
     type: 'mentor',
     area: 'analytics',
     title: 'Наставник на курс "Специалист по Data Science"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 30000,
@@ -136,7 +136,7 @@ export default [
     type: 'mentor',
     area: 'analytics',
     title: 'Наставник на курс "Инженер данных"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 40000,
@@ -148,7 +148,7 @@ export default [
     type: 'mentor',
     area: 'analytics',
     title: 'Наставник на курс "Системный аналитик"',
-    link: '#',
+    link: '/mentor.html',
     payment: {
       type: 'average',
       value: 30000,
@@ -160,7 +160,7 @@ export default [
     type: 'reviewer',
     area: 'programming',
     title: 'Ревьюер на курс "Веб-разработчик"',
-    link: '#',
+    link: '/vacancy.html',
     payment: {
       type: 'average',
       value: 30000,
@@ -172,7 +172,7 @@ export default [
     type: 'reviewer',
     area: 'programming',
     title: 'Ревьюер на курс "React-разработчик"',
-    link: '#',
+    link: '/vacancy.html',
     payment: {
       type: 'average',
       value: 30000,
@@ -184,7 +184,7 @@ export default [
     type: 'reviewer',
     area: 'programming',
     title: 'Ревьюер на курс "Мидл фронтенд-разработчик"',
-    link: '#',
+    link: '/vacancy.html',
     payment: {
       type: 'average',
       value: 30000,
@@ -196,7 +196,7 @@ export default [
     type: 'reviewer',
     area: 'analytics',
     title: 'Ревьюер на курс "Аналитик данных"',
-    link: '#',
+    link: '/vacancy.html',
     payment: {
       type: 'up',
       value: 30000,

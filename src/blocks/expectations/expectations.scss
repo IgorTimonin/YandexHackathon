@@ -93,18 +93,20 @@
 
   &__steps {
     background: $accent-blue-color;
-    padding: 40px;
+    padding: 60px 40px;
     border-radius: $cards-border-radius;
     color: $light-text-color;
+    position: relative;
   }
 
   &__steps-title {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-family: $font-family-section-titles;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
   }
 
   &__steps-list {
@@ -133,14 +135,12 @@
 
       &::after {
         position: absolute;
-        top: 0;
+        top: -15px;
         left: calc(100% + 24px);
-        content: 'Ты находишься здесь';
-        padding-left: 355px;
-        padding-top: 58px;
+        content: '';
         box-sizing: border-box;
-        width: 554px;
-        height: 123px;
+        width: 439px;
+        height: 122px;
         background: url('./images/expectations-arrow.svg') center / contain no-repeat;
       }
     }
@@ -153,10 +153,13 @@
     line-height: 35px;
   }
 
-  &__steps-arrow {
-    width: 550px;
-    height: 121px;
-    background: url('./images/expectations-arrow.svg') center / contain no-repeat;
+  &__steps-arrow-caption {
     position: absolute;
+    right: 17%;
+    top: 55%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
   }
+
 }

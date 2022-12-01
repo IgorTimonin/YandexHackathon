@@ -4,11 +4,11 @@
   left: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0,0,0,.2);
+  background: rgba(0,0,0,.3);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 50;
+  z-index: 150;
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s ease;
@@ -18,12 +18,24 @@
     opacity: 1;
   }
 
+  &_type_video {
+    background: rgba(0,0,0,.8);
+  }
+
   &__inner {
     min-height: 100px;
     min-width: 100px;
     background: $cards-bg-color;
     border-radius: $cards-border-radius;
     position: relative;
+
+    &_type_video {
+      background: url('./images/loader.svg') center / 8% no-repeat;
+      background-color: black;
+      max-width: 1180px;
+      width: 90%;
+      border-radius: unset;
+    }
   }
 
   &__close-btn {
@@ -38,6 +50,12 @@
     background: url('./images/close.svg') center / contain no-repeat;
     cursor: pointer;
 
+    &_popup_video {
+      top: -32px;
+      right: -32px;
+      filter: invert(1);
+    }
+
     &:hover {
       opacity: .8;
     }
@@ -45,5 +63,23 @@
     &:active {
       transform: scale(.95);
     }
+  }
+
+  &__video-iframe {
+    border: 0;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.popup__inner-contacts{
+  width: 760px;
+
+  @media(max-width: $screen-m){
+    width: calc(100% - 80px);
+  }
+
+  @media(max-width: $screen-s){
+    width: calc(100% - 20px);
   }
 }
