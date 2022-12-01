@@ -15,8 +15,6 @@ const slider = new Slider({
 
 slider.enable();
 
-console.log(doubledNumbers);
-
 //Появление сообщений при скролле в разделе Что Яндекс Практикум может дать тебе
 function onEntry(entry) {
   entry.forEach((change) => {
