@@ -31,6 +31,7 @@ for (let elm of elements) {
   observer.observe(elm);
 };
 
+//
 const quizzPopup = new Popup({
   popupSelector: '.popup_type_quizz',
   openedClass: 'popup_opened',

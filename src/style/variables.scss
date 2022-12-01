@@ -2,19 +2,19 @@ $font-family: 'YS Text', Helvetica, sans-serif;
 $font-family-section-titles: 'YS Display', Helvetica, sans-serif;
 $primary-color: #bada55;
 $light-text-color: #fff;
-$accent-yellow-color: #FCD559;
-$accent-light-blue-color: #AACCF1;
-$blank-focus-color: #B3B3B3;
-$primary-bg-color: #E9E9E9;
-$blue-gray-color: #F1F2F5;
-$link-check-base-color: #4D4D4D;
+$accent-yellow-color: #fcd559;
+$accent-light-blue-color: #aaccf1;
+$blank-focus-color: #b3b3b3;
+$primary-bg-color: #e9e9e9;
+$blue-gray-color: #f1f2f5;
+$link-check-base-color: #4d4d4d;
 $primary-text-color: #000;
 $content-primary-color: #000;
 $black-color: #000;
 $cards-bg-color: #fff;
-$hover-blue: #5686E3; //Цвет взят из палитры дизайнеров, но не факт что это нужный
+$hover-blue: #5686e3; //Цвет взят из палитры дизайнеров, но не факт что это нужный
 $cards-border-radius: 16px;
-$accent-blue-color: #5686E3;
+$accent-blue-color: #5686e3;
 $light-text-color: #fff;
 $btn-footer-color: #262626;
 $dark-grey-color: #7E7A73;
@@ -37,6 +37,10 @@ $dark-grey-color: #7E7A73;
   &:hover {
     opacity: 0.85;
   }
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+    padding: 15px 24px;
+  }
 }
 
 //отступ слева в большинстве блоков
@@ -52,10 +56,10 @@ $dark-grey-color: #7E7A73;
 //Общий стиль заголовков секций
 @mixin title-font {
   margin: 0;
-  font-family: $font-family;
+  font-family: $font-family-section-titles;
   font-style: normal;
   font-weight: 500;
-  line-height: 130%;
+  line-height: 120%;
 }
 
 //разрешения экрана
