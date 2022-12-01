@@ -2,6 +2,7 @@ import './app.scss'
 import Slider from './blocks/slider/slider.js';
 import Popup from './blocks/popup/popup';
 import './blocks/quizz-form/quizz-form.js';
+import './blocks/vacancy/vacancy.js';
 
 const slider = new Slider({
   sliderSelector: '.slider',

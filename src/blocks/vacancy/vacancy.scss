@@ -77,7 +77,7 @@
     list-style: none;
   }
 
-  &__results-item {
+  &__results-item-link {
     padding: 24px 40px;
     background: $cards-bg-color;
     border-radius: $cards-border-radius;
@@ -86,12 +86,14 @@
     justify-content: space-between;
     min-height: 211px;
     box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
 
     &:hover {
       background: $accent-light-blue-color;
       cursor: pointer;
 
-      & .vacancy__results-item-paragraph {
+      & .vacancy__results-item-description {
         color: $cards-bg-color;
       }
     }
@@ -105,18 +107,13 @@
     line-height: 130%;
   }
 
-  &__results-item-paragraph {
+  &__results-item-description {
     margin: 0;
     padding: 0;
-    margin-bottom: 8px;
     color: $blank-focus-color;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 130%;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   &__banner {
