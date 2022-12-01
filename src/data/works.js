@@ -158,7 +158,7 @@ export default [
   {
     _id: 14,
     type: 'reviewer',
-    area: 'analytics',
+    area: 'programming',
     title: 'Ревьюер на курс "Веб-разработчик"',
     link: '#',
     payment: {
@@ -170,7 +170,7 @@ export default [
   {
     _id: 15,
     type: 'reviewer',
-    area: 'analytics',
+    area: 'programming',
     title: 'Ревьюер на курс "React-разработчик"',
     link: '#',
     payment: {
@@ -182,7 +182,7 @@ export default [
   {
     _id: 16,
     type: 'reviewer',
-    area: 'analytics',
+    area: 'programming',
     title: 'Ревьюер на курс "Мидл фронтенд-разработчик"',
     link: '#',
     payment: {
