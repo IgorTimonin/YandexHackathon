@@ -34,17 +34,53 @@
 
   &__item {
     flex-basis: 385px;
-    flex-shrink: 0;
     margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
   }
 
   &__item-inner {
     background: $cards-bg-color;
     border-radius: $cards-border-radius;
     margin-bottom: 20px;
+    flex-grow: 1;
 
     &_type_text {
       padding: 32px 40px;
+    }
+
+    &_type_video {
+      position: relative;
+    }
+  }
+
+  &__item-video-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: $cards-border-radius;
+  }
+
+  &__item-play-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 22px;
+    width: 42px;
+    height: 42px;
+    background: url('./images/icon-play.svg');
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(.97);
     }
   }
 
@@ -102,7 +138,7 @@
     }
 
     &:hover {
-      opacity: .8;
+      transform: scale(1.05);
     }
 
     &:active {
@@ -113,7 +149,7 @@
       filter: invert(1);
 
       &:hover {
-        opacity: unset;
+        transform: unset;
         cursor: unset;
       }
 
