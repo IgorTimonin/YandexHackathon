@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
+  height: 32px;
   max-width: 1140px;
   width: 100%;
   top: 12px;
@@ -27,7 +28,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(4, minmax(min-content, max-content));
-    column-gap: 32px;
+    column-gap: 24px;
   }
 
   &__question {
@@ -61,7 +62,7 @@
     border: none;
     border-radius: 120px;
     background-color: black;
-    padding: 9px 16px;
+    padding: 7px 12px;
 
     &:hover {
       opacity: .8;
