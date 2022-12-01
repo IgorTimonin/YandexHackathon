@@ -33,7 +33,7 @@
 
     &:checked ~ .questions__accordeon-content {
       max-height: 500px;
-      padding: 20px 128px 20px 96px;
+      padding: 20px 200px 20px 40px;
       transition: max-height .3s;
     }
   }
