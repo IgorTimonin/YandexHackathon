@@ -17,6 +17,7 @@ slider.enable();
 
 console.log(doubledNumbers);
 
+//Появление сообщений при скролле в разделе Что Яндекс Практикум может дать тебе
 function onEntry(entry) {
   entry.forEach((change) => {
     if (change.isIntersecting) {
@@ -29,7 +30,8 @@ let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.what-give__animation');
 for (let elm of elements) {
   observer.observe(elm);
-}
+};
+
 const quizzPopup = new Popup({
   popupSelector: '.popup_type_quizz',
   openedClass: 'popup_opened',
