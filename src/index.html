@@ -59,7 +59,7 @@
 
         <section class="section2">
 
-          </section>
+        </section>
 
         <section class="teaching main-width-block" id="teaching">
           <h2 class="section-title teaching__title">Чему мы учим?</h2>
@@ -94,8 +94,8 @@
               </div>
             </a>
 
-            <a class="teaching__link teaching__link_right" target="_blank" href="https://practicum.yandex.ru/catalog/design/"
-              alt="Каталог курсов яндекс практикума">
+            <a class="teaching__link teaching__link_right" target="_blank"
+              href="https://practicum.yandex.ru/catalog/design/" alt="Каталог курсов яндекс практикума">
               <div class="teaching__course teaching__course_figma">
                 <h5 class="teaching__course-title">Дизайн</h5>
                 <p class="teaching__course-subtitle">Графический, коммуникационный, для интерфейсов и продуктов</p>
@@ -104,8 +104,8 @@
               <div class="teaching__course-box teaching__course-box_left teaching__course-box_yellow">Figma</div>
             </a>
 
-            <a class="teaching__link teaching__link_right" target="_blank" href="https://practicum.yandex.ru/catalog/marketing/"
-              alt="Каталог курсов яндекс практикума">
+            <a class="teaching__link teaching__link_right" target="_blank"
+              href="https://practicum.yandex.ru/catalog/marketing/" alt="Каталог курсов яндекс практикума">
               <div class="teaching__course teaching__course_traffic">
                 <h5 class="teaching__course-title">Маркетинг</h5>
                 <p class="teaching__course-subtitle">Интернет-маркетинг и управление трафиком</p>
@@ -113,8 +113,8 @@
               </div>
               <div class="teaching__course-box teaching__course-box_left">Трафик</div>
             </a>
-            <a class="teaching__link teaching__link_alone" target="_blank" href="https://practicum.yandex.ru/catalog/eng/"
-              alt="Каталог курсов яндекс практикума">
+            <a class="teaching__link teaching__link_alone" target="_blank"
+              href="https://practicum.yandex.ru/catalog/eng/" alt="Каталог курсов яндекс практикума">
               <div class="teaching__course teaching__course_eng">
                 <h5 class="teaching__course-title">Английский</h5>
                 <p class="teaching__course-subtitle teaching__course-subtitle_s">Для работы и жизни</p>
@@ -243,7 +243,7 @@
                   делать выводы
                 </li>
               </ul>
-              <button class="expectations__card-button expectations__card-button_type_mentor">
+              <button onclick="document.location='./mentor.html'" class="expectations__card-button expectations__card-button_type_mentor">
                 Хочу стать наставником
               </button>
             </div>
@@ -270,7 +270,8 @@
                   <span class="expectations__card-point-accent">проверять</span> код и проекты студентов
                 </li>
               </ul>
-              <button onclick="document.location='./vacancy.html'" class="expectations__card-button expectations__card-button_type_review">
+              <button onclick="document.location='./vacancy.html'"
+                class="expectations__card-button expectations__card-button_type_review">
                 Хочу стать ревьюером
               </button>
             </div>
@@ -292,127 +293,43 @@
           </article>
         </section>
         <section class="vacancy main-width-block" id="vacancy">
-          <h2 class="section-title vacancy__title">Кого мы ищем</h2>
-          <form class="vacancy__filter">
-            <select class="vacancy__filter-job">
-              <option selected>Для наставников</option>
-              <option>Для ревьюеров</option>
+          <h2 class="section-title vacancy__title">Наши открытые предложения</h2>
+          <form class="vacancy__filter" name="vacancies">
+            <select name="type" class="vacancy__filter-job">
+              <option selected value="mentor">Для наставников</option>
+              <option value="reviewer">Для ревьюеров</option>
             </select>
             <fieldset class="vacancy__filter-items">
-              <input name="vacancy-type" value="programming" id="vacancy1" class="vacancy__filter-radio" type="radio">
-              <label for="vacancy1" class="vacancy__filter-item">Аналитика</label>
-              <input checked name="vacancy-type" value="analys" id="vacancy2" class="vacancy__filter-radio"
-                type="radio">
-              <label for="vacancy2" class="vacancy__filter-item">Программирование</label>
-              <input name="vacancy-type" value="design" id="vacancy3" class="vacancy__filter-radio" type="radio">
+              <input checked name="area" value="programming" id="vacancy1" class="vacancy__filter-radio"
+              type="radio">
+              <label for="vacancy1" class="vacancy__filter-item">Программирование</label>
+              <input name="area" value="analytics" id="vacancy2" class="vacancy__filter-radio" type="radio">
+              <label for="vacancy2" class="vacancy__filter-item">Аналитика</label>
+              <input name="area" value="design" id="vacancy3" class="vacancy__filter-radio" type="radio">
               <label for="vacancy3" class="vacancy__filter-item">Дизайн</label>
-              <input name="vacancy-type" value="marketing" id="vacancy4" class="vacancy__filter-radio" type="radio">
+              <input name="area" value="marketing" id="vacancy4" class="vacancy__filter-radio" type="radio">
               <label for="vacancy4" class="vacancy__filter-item">Маркетинг</label>
-              <input name="vacancy-type" value="management" id="vacancy5" class="vacancy__filter-radio" type="radio">
+              <input name="area" value="management" id="vacancy5" class="vacancy__filter-radio" type="radio">
               <label for="vacancy5" class="vacancy__filter-item">Менеджмент</label>
             </fieldset>
           </form>
+          <div class="vacancy__no-results">
+            <p class="vacancy__no-results-text">Таких вакансий пока нет &#128522;</p>
+            <p class="vacancy__no-results-text">Чтобы посмотреть другие, поменяйте критерии на ваше усмотрение</p>
+            <p class="vacancy__no-results-subscribe">А чтобы быть в курсе появления вакансий - подпишитесь на наш Telegram-канал</p>
+          </div>
           <ul class="vacancy__results">
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
-            <li class="vacancy__results-item">
-              <h3 class="vacancy__results-item-title">Наставник на курс "Мидл фронтенд-разработчик"</h3>
-              <div class="vacancy__results-item-description">
-                <p class="vacancy__results-item-paragraph">
-                  [Оплата за ведение группы]
-                </p>
-                <p class="vacancy__results-item-paragraph">
-                  [В среднем 35000 &#8381; в месяц]
-                </p>
-              </div>
-            </li>
           </ul>
+          <template id="vacancy-card">
+            <li class="vacancy__results-item">
+              <a class="vacancy__results-item-link" href="#">
+                <h3 class="vacancy__results-item-title">Название позиции</h3>
+                <p class="vacancy__results-item-description">
+                  оплата
+                </p>
+              </a>
+            </li>
+          </template>
           <div class="vacancy__banner ">
             <div class="vacancy__banner-heading">
               <h3 class="vacancy__banner-title">Не нашёл подходящее предложение?</h3>
@@ -635,6 +552,11 @@
           </div>
           <img src="<%=require('./images/reviewer.jpg')%>" alt="Ревьюер" class="quizz-result__image">
         </div>
+      </div>
+    </div>
+    <div class="popup popup_type_contacts">
+      <div class="popup__inner">
+        <button class="popup__close-btn" type="button"></button>
       </div>
     </div>
   </div>

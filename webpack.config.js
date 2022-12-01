@@ -52,6 +52,10 @@ module.exports = {
       filename: 'vacancy.html',
       template: './src/vacancy.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'mentor.html',
+      template: './src/mentor.html'
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.css'
