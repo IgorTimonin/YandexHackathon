@@ -87,5 +87,13 @@
     @media screen and (max-width: 900px) {
       margin-bottom: 20px;
     }
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
   }
 }

@@ -37,6 +37,10 @@ $dark-grey-color: #7E7A73;
   &:hover {
     opacity: 0.85;
   }
+
+  &:active {
+    transform: scale(.97);
+  }
   @media screen and (max-width: 900px) {
     font-size: 16px;
     padding: 15px 24px;
