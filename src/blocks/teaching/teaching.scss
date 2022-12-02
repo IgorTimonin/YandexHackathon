@@ -64,9 +64,9 @@
       grid-template-columns: auto 128px;
 
       @media (max-width: $screen-m) {
-      grid-template-columns: auto  90px;
-      grid-template-rows: minmax(139px, 172px);
-    }
+        grid-template-columns: auto 90px;
+        grid-template-rows: minmax(139px, 172px);
+      }
     }
 
     &_alone {
@@ -188,6 +188,10 @@
 
       @media (max-width: $screen-lg) {
         max-width: 372px;
+      }
+
+      @media (max-width: $screen-s) {
+        margin-right: 4px;
       }
     }
 
