@@ -67,6 +67,10 @@
       top: -32px;
       right: -32px;
       filter: invert(1);
+
+      @media screen and (max-width: 768px) {
+        right: 0;
+      }
     }
 
     &:hover {
