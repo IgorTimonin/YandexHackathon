@@ -1,5 +1,9 @@
 import vacancies from '../../data/works.js';
-import { CURRENCY_LIST, PAYMENTS_VARIANTS } from '../../utills/constants.js';
+import {
+  CURRENCY_LIST,
+  PAYMENTS_VARIANTS,
+  TYPE_FILTER_VALUES
+} from '../../utills/constants.js';
 
 // карточка с вакансией
 const vacancyTemplate = document.querySelector('#vacancy-card').content;
@@ -30,6 +34,10 @@ const hideNoResults = () => noResultsCard.classList.remove(noResultsVisibilityCl
 
 // форма с фильтрами вакансий
 const vacancyForm = document.forms.vacancies;
+const vacancyTypeFilterBtn = vacancyForm.querySelector('.vacancy__filter-select-button');
+const vacancyFilterItems = vacancyForm.querySelector('.vacancy__filter-job');
+const filterVisibilityClass = 'vacancy__filter-job_visible';
+const openedButtonClass = 'vacancy__filter-select-button_opened';
 
 const filterVacancies = ({ type, area }) => {
   return vacancies.filter(vacancy => {
@@ -43,8 +51,21 @@ const getFilterState = () => {
   return { type, area }
 }
 
+const handleChangeFilter = (filterValue) => {
+  vacancyFilterItems.classList.remove(filterVisibilityClass);
+  vacancyTypeFilterBtn.classList.remove(openedButtonClass);
+  vacancyTypeFilterBtn.textContent = TYPE_FILTER_VALUES[filterValue];
+}
+
+const toggleShowFilterMenu = () => {
+  vacancyFilterItems.classList.toggle(filterVisibilityClass);
+  vacancyTypeFilterBtn.classList.toggle(openedButtonClass);
+}
+
 const showFilteredCards = () => {
-  const filteredVacancies = filterVacancies(getFilterState());
+  const filterState = getFilterState();
+  const filteredVacancies = filterVacancies(filterState);
+  handleChangeFilter(filterState.type)
   vacancyResults.innerHTML = '';
   hideNoResults();
   if (filteredVacancies.length) {
@@ -56,6 +77,7 @@ const showFilteredCards = () => {
 }
 
 vacancyForm.addEventListener('change', showFilteredCards);
+vacancyTypeFilterBtn.addEventListener('click', toggleShowFilterMenu)
 
 // инициализация при загрузке по начальному положению фильтров
 showFilteredCards();
