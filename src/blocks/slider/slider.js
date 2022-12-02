@@ -5,16 +5,18 @@ class Slider {
     nextBtnSelector,
     sliderContainerSelector,
     sliderItemSelector,
-    slidesInRow,
+    // slidesInRow,
   }) {
     this._sliderElement = document.querySelector(sliderSelector);
     this._prevBtn = this._sliderElement.querySelector(prevBtnSelector);
     this._nextBtn = this._sliderElement.querySelector(nextBtnSelector);
     this._container = this._sliderElement.querySelector(sliderContainerSelector);
     this._slidesNumber = this._sliderElement.querySelectorAll(sliderItemSelector).length;
-    this._step = 397; // хардкод для десктопа, убрать если будет время
+    // this._step = 397; // хардкод для десктопа, убрать если будет время
     this._currentSlide = 0;
-    this._slidesInRow = slidesInRow;
+    this._slidesInRow = 1;
+
+    // slidesInRow;
   }
 
   _setBtnDisabled(btn, isDisable) {
@@ -41,8 +43,15 @@ class Slider {
   }
 
   _moveSlides() {
-    const shift = - (this._currentSlide * this._step);
+    const pageWidth = document.documentElement.clientWidth;
+    let step = null;
+    if (pageWidth <= 500) {
+      step = 349;
+    }
+    else step = 397;
+    const shift = - (this._currentSlide * step);
     this._container.style.transform = `translateX(${shift}px)`;
+    console.log(this._currentSlide);
   }
 
   _moveBack() {

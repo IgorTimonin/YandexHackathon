@@ -39,7 +39,7 @@
     @media (max-width: $screen-m) {
       grid-template-columns: 100%;
       grid-template-rows: repeat(6, auto);
-      // max-width: 320px;
+      margin-bottom: 24px;
     }
   }
 
