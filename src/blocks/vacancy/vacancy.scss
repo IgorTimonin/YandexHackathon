@@ -22,18 +22,71 @@
     margin-bottom: 4px;
   }
 
-  &__filter-job {
-    background: $blue-gray-color;
-    border-radius: $cards-border-radius;
-    border: none;
-    padding: 20px 40px;
+  &__filter-select-container {
     font-weight: 400;
     font-size: 20px;
     line-height: 130%;
+    position: relative;
+  }
+
+  &__filter-select-button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 12px;
+    padding: 20px 40px;
+    font-size: inherit;
+    line-height: inherit;
+    background: $blue-gray-color;
+    border-radius: $cards-border-radius;
+    min-width: 275px;
+
+    &::after {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url('./images/filter-arrow.svg') center / contain no-repeat;
+    }
+
+    &_opened {
+      &:after {
+        transform: scale(-1, -1);
+      }
+    }
+
+  }
+
+  &__filter-job {
+    position: absolute;
+    bottom: -1;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+    row-gap: 4px;
+    box-sizing: border-box;
+
+    &_visible {
+      display: flex;
+    }
+  }
+
+  &__filter-option {
+    font-size: inherit;
+    line-height: inherit;
+    padding: 20px 40px;
+    background-color: $blue-gray-color;
+    border-radius: $cards-border-radius;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    color: $dark-grey-color;
     cursor: pointer;
 
-    &:focus-visible {
-      outline: none;
+    &:hover {
+      transform: scale(1.02);
     }
   }
 
@@ -64,6 +117,10 @@
 
     &:checked+.vacancy__filter-item {
       color: $content-primary-color;
+    }
+
+    &:checked+.vacancy__filter-option {
+      color: $primary-text-color;
     }
   }
 
