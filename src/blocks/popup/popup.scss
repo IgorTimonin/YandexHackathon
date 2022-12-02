@@ -4,7 +4,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, .3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   }
 
   &_type_video {
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
   }
 
   &__inner {
@@ -35,6 +35,19 @@
       max-width: 1180px;
       width: 90%;
       border-radius: unset;
+    }
+
+    &_type_contacts {
+      border-radius: 16px;
+      width: 760px;
+
+      @media(max-width: $screen-m) {
+        width: calc(100% - 80px);
+      }
+
+      @media(max-width: $screen-s) {
+        width: calc(100% - 20px);
+      }
     }
   }
 
@@ -69,17 +82,5 @@
     border: 0;
     width: 100%;
     aspect-ratio: 16 / 9;
-  }
-}
-
-.popup__inner-contacts{
-  width: 760px;
-
-  @media(max-width: $screen-m){
-    width: calc(100% - 80px);
-  }
-
-  @media(max-width: $screen-s){
-    width: calc(100% - 20px);
   }
 }
