@@ -1,5 +1,4 @@
-.teaching{
-
+.teaching {
   &__title {
     width: fit-content;
     position: relative;
@@ -14,13 +13,16 @@
       top: -17px;
 
       @media (max-width: $screen-m) {
-        background: none;
-
+        width: 40px;
+        height: 35px;
+        right: -50px;
+        top: -8px;
       }
     }
   }
 
-  &__box{
+  &__box {
+    margin: 0 20px;
     margin-bottom: 198px;
     // display: flex;
     // flex-wrap: wrap;
@@ -37,44 +39,55 @@
     @media (max-width: $screen-m) {
       grid-template-columns: 100%;
       grid-template-rows: repeat(6, auto);
+      // max-width: 320px;
     }
   }
 
-  &__links-box{
+  &__links-box {
     display: grid;
     grid-template-columns: minmax(min-content, max-content) 160px;
   }
 
-  &__link{
+  &__link {
     display: grid;
     grid-template-columns: 128px auto;
     text-decoration: none;
     color: #000000;
 
-    &_right{
-      grid-template-columns: auto 128px;
+    @media (max-width: $screen-m) {
+      grid-template-columns: 90px auto;
+      grid-template-rows: minmax(139px, 172px);
     }
 
-    &_alone{
+    &_right {
+      grid-template-columns: auto 128px;
+
+      @media (max-width: $screen-m) {
+      grid-template-columns: auto  90px;
+      grid-template-rows: minmax(139px, 172px);
+    }
+    }
+
+    &_alone {
       display: initial;
     }
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
       transform: scale(1.03);
     }
 
     &:active {
-      transform: scale(.97);
+      transform: scale(0.97);
     }
   }
 
-  &__links{
+  &__links {
     display: flex;
     column-gap: 4px;
   }
 
-  &__course-title{
+  &__course-title {
     font-family: $font-family;
     font-style: normal;
     font-weight: 500;
@@ -85,12 +98,12 @@
 
     color: $black-color;
 
-    &_light{
+    &_light {
       color: $light-text-color;
     }
   }
 
-  &__course-subtitle{
+  &__course-subtitle {
     font-family: $font-family;
     font-style: normal;
     font-weight: 400;
@@ -100,14 +113,18 @@
     color: #000000;
     margin: 12px 0;
     height: 106px;
+
+    @media (max-width: $screen-m) {
+      font-size: 14px;
+    }
   }
 
-  &__course-subtitle_s{
+  &__course-subtitle_s {
     height: 125px;
     margin: 4px 0;
   }
 
-  &__course-amount{
+  &__course-amount {
     font-family: $font-family;
     font-style: normal;
     font-weight: 400;
@@ -117,16 +134,16 @@
     color: $blank-focus-color;
     margin: 0;
 
-    &_dark{
+    &_dark {
       color: $black-color;
     }
 
-    &_light{
+    &_light {
       color: $light-text-color;
     }
   }
 
-  &__course{
+  &__course {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -136,48 +153,50 @@
     max-width: 217.33px;
 
     @media (max-width: $screen-lg) {
-      max-width: 100%
-
+      max-width: 100%;
     }
 
-    &_c{
+    @media (max-width: $screen-m) {
+      max-width: 249px;
+    }
+
+    &_c {
       // max-width: 232px;
     }
 
-    &_sql{
+    &_sql {
       // max-width: 210px;
     }
 
-    &_it{
+    &_it {
       // max-width: 210px;
       border-radius: 0 16px 16px 0;
     }
 
-    &_figma{
+    &_figma {
       // max-width: 217.33px;
     }
 
-    &_traffic{
+    &_traffic {
       // max-width: 217.33px;
     }
 
-    &_eng{
+    &_eng {
       max-width: 170.33px;
       margin-right: 12px;
 
       @media (max-width: $screen-lg) {
         max-width: 372px;
-
       }
     }
 
-    &_all{
+    &_all {
       width: 123px;
       background-color: $black-color;
     }
   }
 
-  &__course-box{
+  &__course-box {
     width: 140px;
     background: $accent-light-blue-color;
     border-radius: 16px 0 0 16px;
@@ -192,26 +211,27 @@
     font-size: 18.2214px;
     line-height: 120%;
 
-    &_left{
+    @media (max-width: $screen-m) {
+      width: 100px;
+    }
+
+    &_left {
       border-radius: 0 16px 16px 0;
       position: relative;
       right: 12px;
     }
 
-    &_blue{
+    &_blue {
       background: $accent-blue-color;
       color: $light-text-color;
     }
 
-    &_yellow{
+    &_yellow {
       background: $accent-yellow-color;
     }
   }
 
-
-
-  &__course-box-text{
-
+  &__course-box-text {
     font-family: $font-family;
     font-style: normal;
     font-weight: 400;
@@ -222,4 +242,3 @@
     color: #161616;
   }
 }
-

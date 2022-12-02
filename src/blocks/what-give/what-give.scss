@@ -1,6 +1,6 @@
 .what-give {
   margin-bottom: 128px;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 475px) {
     margin-bottom: 72px;
   }
 
@@ -159,7 +159,7 @@
     &:hover {
       background-color: $hover-blue;
     }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 475px) {
     margin-bottom: 0;
     width: 100%;
   }
