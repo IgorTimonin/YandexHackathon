@@ -6,6 +6,10 @@
   padding-bottom: 128px;
   position: relative;
 
+  @media (max-width: $screen-s) {
+    padding-bottom: 68px;
+  }
+
   &__hearts {
     position: absolute;
     right: 90px;
