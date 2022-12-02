@@ -22,9 +22,7 @@
 - Разместить production-билд на github pages - `npm run deploy`
 
 ### Ссылка на проект
-  - Яндекс.Облако
-[Нажми на меня](https://mesto.nsmamaev.nomoredomains.icu/)
-  - Vercel
+
 [Нажми на меня](https://yandex-hackathon.vercel.app/)
 
 
