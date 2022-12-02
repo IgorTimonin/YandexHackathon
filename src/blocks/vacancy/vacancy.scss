@@ -1,9 +1,17 @@
 .vacancy {
   padding-bottom: 86px;
 
+  @media screen and (max-width: 375px) {
+    padding-bottom: 68px;
+  }
+
   &__title {
     width: fit-content;
     position: relative;
+
+    @media screen and (max-width: 375px) {
+      width: 70%;
+    }
 
     &::after {
       content: '';
@@ -13,13 +21,25 @@
       position: absolute;
       right: -110px;
       top: -30px;
+
+      @media screen and (max-width: 480px) {
+        width: 50px;
+        height: 54px;
+        top: 0;
+        right: -30px;
+      }
     }
   }
 
   &__filter {
     display: flex;
-    column-gap: 2px;
+    gap: 4px;
     margin-bottom: 4px;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
   }
 
   &__filter-select-container {
@@ -27,6 +47,12 @@
     font-size: 20px;
     line-height: 130%;
     position: relative;
+
+    @media screen and (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+    }
   }
 
   &__filter-select-button {
@@ -40,7 +66,7 @@
     line-height: inherit;
     background: $blue-gray-color;
     border-radius: $cards-border-radius;
-    min-width: 275px;
+    min-width: 280px;
 
     &::after {
       content: '';
@@ -55,6 +81,14 @@
       }
     }
 
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 375px) {
+      padding: 10px 16px;
+      font-size: 16px;
+    }
   }
 
   &__filter-job {
@@ -70,6 +104,11 @@
     row-gap: 4px;
     box-sizing: border-box;
 
+    @media screen and (max-width: 650px) {
+      position: static;
+      margin-top: 0;
+    }
+
     &_visible {
       display: flex;
     }
@@ -78,22 +117,36 @@
   &__filter-option {
     font-size: inherit;
     line-height: inherit;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 60px;
     background-color: $blue-gray-color;
     border-radius: $cards-border-radius;
     box-shadow: 0 0 10px rgba(0,0,0,.4);
     color: $dark-grey-color;
     cursor: pointer;
 
+    @media screen and (max-width: 650px) {
+      box-shadow: unset;
+    }
+
+    @media screen and (max-width: 375px) {
+      padding: 10px 32px;
+      font-size: 16px;
+    }
+
     &:hover {
       transform: scale(1.02);
     }
   }
 
+  &__filter-items-wrapper {
+    border-radius: $cards-border-radius;
+    overflow-x: hidden;
+    flex-grow: 1;
+  }
+
   &__filter-items {
     background: $blue-gray-color;
     border: none;
-    flex-grow: 1;
     padding: 20px 40px;
     column-gap: 32px;
     margin: 0;
@@ -102,6 +155,11 @@
     border-bottom-left-radius: 0;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 375px) {
+      padding: 10px 16px;
+      column-gap: 16px;
+    }
   }
 
   &__filter-item {
@@ -110,6 +168,10 @@
     font-size: 20px;
     line-height: 130%;
     color: $dark-grey-color;
+
+    @media screen and (max-width: 375px) {
+      font-size: 16px;
+    }
   }
 
   &__filter-radio {
@@ -161,6 +223,14 @@
     margin-bottom: 12px;
     padding: 0;
     list-style: none;
+
+    @media screen and (max-width: 375px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__results-item {
+    display: flex;
   }
 
   &__results-item-link {
@@ -174,6 +244,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: inherit;
+    flex-grow: 1;
 
     &:hover {
       background: $accent-light-blue-color;
@@ -183,6 +254,12 @@
         color: $cards-bg-color;
       }
     }
+
+    @media screen and (max-width: 375px) {
+      padding: 20px;
+      min-height: unset;
+      row-gap: 8px;
+    }
   }
 
   &__results-item-title {
@@ -191,6 +268,11 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 130%;
+
+
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 
   &__results-item-description {
@@ -200,6 +282,10 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
+
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 
   &__banner {
@@ -209,6 +295,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 375px) {
+      padding: 20px;
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: flex-start;
+    }
   }
 
   &__banner-heading {
@@ -225,6 +318,10 @@
     font-size: 36px;
     line-height: 130%;
     color: $content-primary-color;
+
+    @media screen and (max-width: 375px) {
+      font-size: 24px;
+    }
   }
 
   &__banner-subtitle {
@@ -234,6 +331,10 @@
     font-size: 18px;
     line-height: 1.3;
     color: $content-primary-color;
+
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 
   &__banner-button {
@@ -252,6 +353,11 @@
 
     &:active {
       transform: scale(.97);
+    }
+
+    @media screen and (max-width: 375px) {
+      padding: 9px 16px;
+      font-size: 14px;
     }
   }
 }
