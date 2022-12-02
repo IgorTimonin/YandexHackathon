@@ -57,9 +57,11 @@ class Slider {
     //корректировка смещения для mobile view
     let shift = null;
       if ( pageWidth <= 500 ) {
-        shift = -(this._currentSlide - 1) * step;
+        shift = -(this._currentSlide - 0.058) * step;
       }
       else shift = -(this._currentSlide * step);
+
+    // const shift = -(this._currentSlide * step);
     this._container.style.transform = `translateX(${shift}px)`;
   }
 
