@@ -35,7 +35,7 @@
     @media (max-width: $screen-s) {
       column-gap: 29px;
       justify-self: flex-start;
-      transform: translateX(349px);
+      transform: translateX(20px);
     }
   }
 
@@ -93,7 +93,7 @@
 
     @media (max-width: $screen-s) {
       bottom: 20px;
-    right: 20px;
+      right: 20px;
     }
 
     &:hover {
@@ -164,7 +164,7 @@
       @media (max-width: $screen-s) {
         position: absolute;
         top: 94%;
-        left: 58%;
+        left: 67%;
         width: 40px;
         height: 25px;
       }
@@ -176,7 +176,7 @@
       @media (max-width: $screen-s) {
         position: absolute;
         top: 94%;
-        right: 33%;
+        right: 8%;
         width: 40px;
         height: 25px;
       }

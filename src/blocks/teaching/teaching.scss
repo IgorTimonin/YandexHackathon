@@ -57,6 +57,7 @@
     @media (max-width: $screen-m) {
       grid-template-columns: 90px auto;
       grid-template-rows: minmax(139px, 172px);
+      // justify-items: center;
     }
 
     &_right {
