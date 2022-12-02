@@ -1,7 +1,12 @@
 .section1 {
-  margin-top: 72px;
-  margin-bottom: 75px;
+  // margin-top: 72px;
+  // margin-bottom: 75px;
   margin: 0 20px;
+  width: 96vw;
+  @media screen and (max-width: 660px) {
+    width: 100%;
+    margin: 0;
+  }
 
   &__main {
     @include cards-left-padding;
@@ -14,6 +19,7 @@
     margin-bottom: 8px;
     @media screen and (max-width: 660px) {
       padding: 0 20px;
+      margin-bottom: 0;
     }
   }
 
@@ -27,6 +33,7 @@
     @media screen and (max-width: 540px) {
       max-width: 400px;
       min-width: auto;
+      padding-top: 20px;
     }
   }
 
