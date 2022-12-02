@@ -1,5 +1,6 @@
 .expectations {
   padding-bottom: 128px;
+  overflow: hidden;  //убрать
 
   &__card {
     display: flex;

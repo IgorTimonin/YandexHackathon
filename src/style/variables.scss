@@ -66,6 +66,15 @@ $dark-grey-color: #7E7A73;
   line-height: 120%;
 }
 
+@mixin hide-scroll-bar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 //разрешения экрана
 $screen-xs: 320px;
 $screen-s: 480px;
