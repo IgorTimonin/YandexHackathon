@@ -1,5 +1,6 @@
 .expectations {
   padding-bottom: 128px;
+  overflow: hidden;  //убрать
 
   @media (max-width: $screen-s) {
     max-width: 320px;
