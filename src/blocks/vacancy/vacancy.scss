@@ -196,6 +196,12 @@
     &_visible {
       display: block;
     }
+
+    @media screen and (max-width: 375px) {
+      padding: 20px;
+      background-size: 48px 48px;
+      background-position: 90% 45%;
+    }
   }
 
   &__no-results-text {
@@ -204,6 +210,10 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 130%;
+
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 
   &__no-results-subscribe {
@@ -213,6 +223,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 130%;
+
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 
   &__results {
