@@ -22,7 +22,9 @@
 - Разместить production-билд на github pages - `npm run deploy`
 
 ### Ссылка на проект
-[Нажми на меня](https://mesto.nsmamaev.nomoredomains.icu/)
+
+[Нажми на меня](https://yandex-hackathon.vercel.app/)
+
 
 ### Стек 
 - HTML
