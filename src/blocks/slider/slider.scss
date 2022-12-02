@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__wrapper {
     overflow: hidden;
@@ -29,7 +30,13 @@
     padding: 0;
     list-style: none;
     column-gap: 12px;
-    transition: transform .3s ease-out;
+    transition: transform 0.3s ease-out;
+
+    @media (max-width: $screen-s) {
+      column-gap: 29px;
+      justify-self: flex-start;
+      transform: translateX(20px);
+    }
   }
 
   &__item {
@@ -39,6 +46,11 @@
     flex-direction: column;
     justify-content: space-between;
     flex-shrink: 0;
+
+    @media (max-width: $screen-s) {
+      flex-basis: 320px;
+      margin-bottom: 24px;
+    }
   }
 
   &__item-inner {
@@ -46,6 +58,10 @@
     border-radius: $cards-border-radius;
     margin-bottom: 20px;
     flex-grow: 1;
+
+    @media (max-width: $screen-s) {
+      margin-bottom: 12px;
+    }
 
     &_type_text {
       padding: 32px 40px;
@@ -75,12 +91,17 @@
     cursor: pointer;
     padding: 0;
 
+    @media (max-width: $screen-s) {
+      bottom: 20px;
+      right: 20px;
+    }
+
     &:hover {
       transform: scale(1.05);
     }
 
     &:active {
-      transform: scale(.97);
+      transform: scale(0.97);
     }
   }
 
@@ -109,6 +130,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
+
+    @media (max-width: $screen-s) {
+      font-size: 16px;
+    }
   }
 
   &__item-profession {
@@ -117,6 +142,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
+
+    @media (max-width: $screen-s) {
+      font-size: 14px;
+    }
   }
 
   &__control {
@@ -126,15 +155,31 @@
     background: center / contain no-repeat;
     padding: 0;
     cursor: pointer;
+    z-index: 2;
 
     &_type_prev {
       background-image: url('./images/slide-prev.svg');
       margin-right: 16px;
+
+      @media (max-width: $screen-s) {
+        position: absolute;
+        top: 94%;
+        left: 67%;
+        width: 40px;
+        height: 25px;
+      }
     }
 
     &_type_next {
       background-image: url('./images/slide-next.svg');
       margin-left: 16px;
+      @media (max-width: $screen-s) {
+        position: absolute;
+        top: 94%;
+        right: 6%;
+        width: 40px;
+        height: 25px;
+      }
     }
 
     &:hover {
@@ -142,7 +187,7 @@
     }
 
     &:active {
-      transform: scale(.97);
+      transform: scale(0.97);
     }
 
     &:disabled {

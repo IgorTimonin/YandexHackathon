@@ -1,5 +1,11 @@
 .expectations {
   padding-bottom: 128px;
+  overflow: hidden;  //убрать
+
+  @media (max-width: $screen-s) {
+    max-width: 340px;
+    padding-bottom: 68px;
+  }
 
   &__card {
     display: flex;
@@ -21,6 +27,10 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 20px;
+
+    @media (max-width: $screen-s) {
+      padding: 24px 20px;
+    }
   }
 
   &__card-title {
@@ -29,28 +39,37 @@
     line-height: 130%;
     margin: 0;
     padding: 0;
+
+    @media (max-width: $screen-s) {
+      font-size: 20px;
+    }
   }
 
   &__card-points {
     margin: 0;
     padding: 0;
-    list-style: none;
+    // list-style: none;
     display: flex;
     flex-direction: column;
     row-gap: 12px;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
-  }
 
-  &__card-point-accent {
-    font-weight: 500;
-
-    &::before {
-      content: '•';
-      padding: 0 10px;
+    @media (max-width: $screen-s) {
+      font-size: 14px;
+      padding: 0 5px 0 20px;
     }
   }
+
+  // &__card-point-accent {
+  //   font-weight: 500;
+
+  //   &::before {
+  //     content: '•';
+  //     padding: 0 10px;
+  //   }
+  // }
 
   &__card-button {
     font-weight: 500;
@@ -64,11 +83,11 @@
     cursor: pointer;
 
     &:hover {
-      opacity: .9;
+      opacity: 0.9;
     }
 
     &:active {
-      transform: scale(.97);
+      transform: scale(0.97);
     }
   }
 
@@ -81,6 +100,10 @@
     border-radius: $cards-border-radius;
     flex-shrink: 1;
     flex-grow: 0;
+
+    @media (max-width: $screen-m) {
+      display: none;
+    }
 
     &_type_mentor {
       background-image: url('./images/expectations1.jpg');
@@ -97,6 +120,10 @@
     border-radius: $cards-border-radius;
     color: $light-text-color;
     position: relative;
+
+    @media (max-width: $screen-s) {
+      padding: 40px 20px;
+    }
   }
 
   &__steps-title {
@@ -107,6 +134,10 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 130%;
+
+    @media (max-width: $screen-s) {
+      font-size: 24px;
+    }
   }
 
   &__steps-list {
@@ -141,7 +172,12 @@
         box-sizing: border-box;
         width: 439px;
         height: 122px;
-        background: url('./images/expectations-arrow.svg') center / contain no-repeat;
+        background: url('./images/expectations-arrow.svg') center / contain
+          no-repeat;
+
+        @media (max-width: $screen-m) {
+          display: none;
+        }
       }
     }
   }
@@ -151,6 +187,10 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
+
+    @media (max-width: $screen-s) {
+      font-size: 20px;
+    }
   }
 
   &__steps-arrow-caption {
@@ -160,6 +200,9 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
-  }
 
+    @media (max-width: $screen-m) {
+      display: none;
+    }
+  }
 }

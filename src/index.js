@@ -11,7 +11,7 @@ const slider = new Slider({
   nextBtnSelector: '.slider__control_type_next',
   sliderContainerSelector: '.slider__inner',
   sliderItemSelector: '.slider__item',
-  slidesInRow: 3,
+  // slidesInRow: 3,
 })
 
 slider.enable();
@@ -31,6 +31,7 @@ for (let elm of elements) {
   observer.observe(elm);
 };
 
+//
 const quizzPopup = new Popup({
   popupSelector: '.popup_type_quizz',
   openedClass: 'popup_opened',

@@ -3,10 +3,23 @@
   border-radius: $cards-border-radius;
   padding: 96px 100px 89px;
 
+  @media screen and (max-width: 600px) {
+      padding: 24px 20px;
+    }
+
+  &__contacts {
+    position: relative;
+  }
+
   &__columns {
     margin-bottom: 48px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 900px) {
+      margin-bottom: 28px;
+      flex-direction: column;
+    }
   }
 
   &__contacts-phone {
@@ -25,12 +38,23 @@
     margin: 0;
     margin-bottom: 32px;
     padding: 0;
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__contacts-social {
     display: flex;
     column-gap: 20px;
     align-items: center;
+
+    @media screen and (max-width: 900px) {
+      position: absolute;
+      top: 205px;
+      left: 0;
+      column-gap: 28px;
+    }
   }
 
   &__social-icon {
@@ -65,6 +89,15 @@
     grid-template-columns: repeat(2, minmax(100px, 280px));
     column-gap: 20px;
     row-gap: 12px;
+
+    @media screen and (max-width: 900px) {
+      margin-bottom: 44px;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 93px 215px;
+      column-gap: 13px;
+    }
   }
 
   &__nav-link {
@@ -77,6 +110,10 @@
     &:hover {
       opacity: .8;
     }
+
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 
   &__law-info {
@@ -87,6 +124,10 @@
     line-height: 130%;
     row-gap: 14px;
     color: #7E7A73;
+
+    @media screen and (max-width: 425px) {
+      font-size: 12px;
+    }
   }
 
   &__law-info-paragraph {

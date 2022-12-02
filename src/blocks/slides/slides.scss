@@ -6,6 +6,15 @@
   padding-bottom: 128px;
   position: relative;
 
+  @media (max-width: $screen-s) {
+    padding-bottom: 68px;
+  }
+
+  &__container {
+    width: 100vw;
+    overflow: hidden;
+  }
+
   &__hearts {
     position: absolute;
     right: 90px;
@@ -13,5 +22,18 @@
     background: url('./images/hearts.svg') center / contain no-repeat;
     width: 382px;
     height: 125px;
+
+    @media (max-width: $screen-m) {
+      width: 128px;
+      height: 45px;
+      right: 30px;
+      top: -5px;
+    }
+  }
+
+  &__section-title {
+    @media (max-width: $screen-s) {
+      max-width: 200px;
+    }
   }
 }

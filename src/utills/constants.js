@@ -8,3 +8,8 @@ export const PAYMENTS_VARIANTS = {
   'average': 'В среднем',
   'up': 'до',
 }
+
+export const TYPE_FILTER_VALUES = {
+  'mentor': 'Для наставников',
+  'reviewer': 'Для ревьюеров',
+}
