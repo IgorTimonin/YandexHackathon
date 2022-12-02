@@ -1,14 +1,27 @@
 .quizz-form {
   background: $accent-light-blue-color;
-  height: 100%;
   padding: 72px 127px 72px 72px;
-  border-radius: $cards-border-radius;
-  min-width: 1180px;
+  border-radius: 50px;
+  max-width: 1180px;
+  width: calc(100vw - 40px);
   min-height: 720px;
   box-sizing: border-box;
   display: none;
   flex-direction: column;
   flex-grow: 1;
+  overflow: hidden; // картинка на фоне вылазит за попап, временная реализация
+
+  @media screen and (max-width: 768px) {
+    min-height: unset;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 56px 40px;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 56px 20px 30px 20px;
+  }
 
   &_visible {
     display: flex;
@@ -22,6 +35,12 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 130%;
+    z-index: 1;
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
   }
 
   &__subtitle {
@@ -32,6 +51,11 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
   }
 
   &__form {
@@ -43,6 +67,8 @@
   &__screen {
     display: none;
     position: relative;
+    z-index: 1;
+    background: right top / contain no-repeat;
 
     &_visible {
       display: flex;
@@ -50,6 +76,14 @@
       align-items: flex-start;
       flex-grow: 1;
       justify-content: space-between;
+    }
+
+    &_number_first {
+      background-image: url('./images/playstation.png');
+    }
+
+    &_number_second {
+      background-image: url('./images/dandy.png');
     }
   }
 
@@ -68,12 +102,22 @@
     flex-direction: column;
     max-width: 578px;
     row-gap: 12px;
+
+    @media screen and (max-width: 480px) {
+      row-gap: 4px;
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 425px) {
+      row-gap: 4px;
+      margin-bottom: 12px;
+    }
   }
 
   &__answer {
     background: $cards-bg-color;
     color: $primary-text-color;
-    padding: 16px 24px 16px 16px;
+    padding: 16px;
     border-radius: 25px;
     font-weight: 400;
     font-size: 16px;
@@ -86,12 +130,21 @@
     &:hover {
       opacity: .9;
     }
+
+    @media screen and (max-width: 480px) {
+      padding-left: 12px;
+      padding-right: 12px;
+      column-gap: 12px;
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.9);
+    }
   }
 
   &__checkbox-visible {
     width: 24px;
     height: 24px;
     background: url('./images/checkbox-empty.svg') center / contain no-repeat;
+    flex-shrink: 0;
   }
 
   &__checkbox-hidden {
@@ -116,31 +169,21 @@
     &:active {
       transform: scale(.97);
     }
+
+    @media screen and (max-width: 480px) {
+      padding: 9px 12px;
+      font-size: 14px;
+    }
   }
 
   &__screen-number {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-  }
 
-  &__bg-image {
-    position: absolute;
-    background: center / contain no-repeat;
-    right: -32px;
-    bottom: 0;
-
-    &_number_first {
-
-      width: 415px;
-      height: 487px;
-      background-image: url('./images/playstation.png');
-    }
-
-    &_number_second {
-      width: 543px;
-      height: 487px;
-      background-image: url('./images/dandy.png');
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+      line-height: 19px;
     }
   }
 }
