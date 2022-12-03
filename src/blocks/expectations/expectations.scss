@@ -1,15 +1,10 @@
 .expectations {
   padding-bottom: 128px;
+  overflow: hidden;  //убрать
 
   @media (max-width: $screen-s) {
-    width: calc(100% - 40px);
+    max-width: 340px;
     padding-bottom: 68px;
-  }
-
-  &__title {
-    @media (max-width: $screen-s) {
-      margin-left: 0;
-    }
   }
 
   &__card {

@@ -45,7 +45,7 @@
 
   &__links-box {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr) 158px;
+    grid-template-columns: minmax(min-content, max-content) 160px;
   }
 
   &__link {
@@ -198,10 +198,6 @@
     &_all {
       width: 123px;
       background-color: $black-color;
-
-      @media (max-width: $screen-s) {
-        width: 118px;
-      }
     }
   }
 
