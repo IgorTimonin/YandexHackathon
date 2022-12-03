@@ -1,0 +1,178 @@
+.what-give {
+  margin-bottom: 128px;
+  @media screen and (max-width: 475px) {
+    margin-bottom: 72px;
+  }
+
+  &__container {
+    @include cards-border-radius;
+    background-image: url('images/bg-what-give.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 20px;
+    @media screen and (max-width: 900px) {
+      background-size: clip;
+    }
+    @media screen and (max-width: 480px) {
+      background-image: none;
+      height: auto;
+      max-width: 340px;
+    }
+  }
+
+  &__cards-list {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+  }
+
+  &__card {
+    position: absolute;
+    top: 0;
+    list-style: none;
+    padding: 20px;
+    border-radius: 30px 30px 0 0;
+    background-color: $cards-bg-color;
+    transition: opacity 2s, transform 2s;
+    @media screen and (max-width: 480px) {
+      position: static;
+      margin-bottom: 4px;
+      width: 100% !important;
+      border-radius: 16px !important;
+      box-sizing: border-box;
+    }
+  }
+
+  &__card:nth-child(1) {
+    top: 5%;
+    left: calc(50% - 115px);
+    border-radius: 30px;
+    width: 230px;
+
+    @media screen and (max-width: 1080px) {
+      left: calc(50% - 97px);
+      top: 10%;
+    }
+  }
+
+  &__card:nth-child(2) {
+    top: 25%;
+    left: 7%;
+    border-bottom-left-radius: 30px;
+    width: 290px;
+    transition-delay: 0.5s;
+    @media screen and (max-width: 1040px) {
+      top: 40%;
+    }
+  }
+
+  &__card:nth-child(3) {
+    top: 55%;
+    left: 7%;
+    border-bottom-left-radius: 30px;
+    width: 250px;
+    transition-delay: 0.7s;
+    @media screen and (max-width: 1040px) {
+      top: 75%;
+    }
+  }
+
+  &__card:nth-child(4) {
+    top: 25%;
+    right: 3em;
+    border-bottom-right-radius: 30px;
+    width: 220px;
+    transition-delay: 0.9s;
+    @media screen and (max-width: 1040px) {
+      right: 3em;
+    }
+  }
+
+  &__card:nth-child(5) {
+    top: 55%;
+    right: 3vw;
+    border-bottom-right-radius: 30px;
+    width: 240px;
+    transition-delay: 0.5s;
+    @media screen and (max-width: 1040px) {
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__card-title {
+    margin: 0;
+    vertical-align: middle;
+    margin-bottom: 12px;
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    @media screen and (max-width: 1040px) {
+      text-align: center;
+      margin: 0;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 24px;
+      text-align: start;
+      margin-bottom: 12px;
+      max-width: 340px;
+    }
+  }
+
+  &__card-text {
+    margin: 0;
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    max-width: 284px;
+    @media screen and (max-width: 1040px) {
+      display: none;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__btn {
+    @include button;
+    background-color: $content-primary-color;
+    color: $light-text-color;
+    margin-bottom: 60px;
+    &:hover {
+      background-color: $hover-blue;
+    }
+    @media screen and (max-width: 475px) {
+    margin-bottom: 0;
+    width: 100%;
+
+  }
+  }
+
+  &__animation {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  &__show {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

@@ -1,0 +1,104 @@
+.quizz-result {
+  max-width: 1180px;
+  width: calc(100vw - 40px);
+  min-height: 675px;
+  padding: 72px;
+  box-sizing: border-box;
+  display: none;
+  column-gap: 40px;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    min-height: unset;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 56px 40px;
+  }
+
+  &_visible {
+    display: flex;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__text-lined {
+    text-decoration: line-through;
+  }
+
+  &__text-accent {
+    color: $accent-blue-color
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: $font-family-section-titles;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-family-section-titles;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    flex-grow: 1;
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    max-width: 562px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @include button;
+    font-size: 16px;
+    line-height: 20px;
+    color: $light-text-color;
+    background: $black-color;
+    justify-self: flex-end;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 100%;
+    }
+  }
+
+}

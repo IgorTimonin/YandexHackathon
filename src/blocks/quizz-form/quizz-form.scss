@@ -1,0 +1,189 @@
+.quizz-form {
+  background: $accent-light-blue-color;
+  padding: 72px 127px 72px 72px;
+  border-radius: 50px;
+  max-width: 1180px;
+  width: calc(100vw - 40px);
+  min-height: 720px;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden; // картинка на фоне вылазит за попап, временная реализация
+
+  @media screen and (max-width: 768px) {
+    min-height: unset;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 56px 40px;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 56px 20px 30px 20px;
+  }
+
+  &_visible {
+    display: flex;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    font-family: $font-family-section-titles;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    z-index: 1;
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-family: $font-family-section-titles;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  &__screen {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background: right top / contain no-repeat;
+
+    &_visible {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    &_number_first {
+      background-image: url('./images/playstation.png');
+    }
+
+    &_number_second {
+      background-image: url('./images/dandy.png');
+    }
+  }
+
+  &__screen-bottom {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__fields {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 578px;
+    row-gap: 12px;
+
+    @media screen and (max-width: 480px) {
+      row-gap: 4px;
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 425px) {
+      row-gap: 4px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__answer {
+    background: $cards-bg-color;
+    color: $primary-text-color;
+    padding: 16px;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .9;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding-left: 12px;
+      padding-right: 12px;
+      column-gap: 12px;
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  &__checkbox-visible {
+    width: 24px;
+    height: 24px;
+    background: url('./images/checkbox-empty.svg') center / contain no-repeat;
+    flex-shrink: 0;
+  }
+
+  &__checkbox-hidden {
+    display: none;
+
+    &:checked+.quizz-form__checkbox-visible {
+      background-image: url('./images/checkbox-fill.svg');
+    }
+  }
+
+  &__button {
+    @include button;
+    font-size: 16px;
+    line-height: 20px;
+    color: $light-text-color;
+    background-color: $black-color;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 9px 12px;
+      font-size: 14px;
+    }
+  }
+
+  &__screen-number {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}

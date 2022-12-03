@@ -1,0 +1,253 @@
+.teaching {
+  &__title {
+    width: fit-content;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 80px;
+      height: 71px;
+      background: no-repeat center/100% url('./images/heard-arrow.svg');
+      position: absolute;
+      right: -102px;
+      top: -17px;
+
+      @media (max-width: $screen-m) {
+        width: 40px;
+        height: 35px;
+        right: -50px;
+        top: -8px;
+      }
+    }
+  }
+
+  &__box {
+    margin: 0 20px;
+    margin-bottom: 198px;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 12px;
+
+    @media (max-width: $screen-lg) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+    }
+
+    @media (max-width: $screen-m) {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(6, auto);
+      margin-bottom: 24px;
+    }
+  }
+
+  &__links-box {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) 158px;
+  }
+
+  &__link {
+    display: grid;
+    grid-template-columns: 128px auto;
+    text-decoration: none;
+    color: #000000;
+
+    @media (max-width: $screen-m) {
+      grid-template-columns: 90px auto;
+      grid-template-rows: minmax(139px, 172px);
+      // justify-items: center;
+    }
+
+    &_right {
+      grid-template-columns: auto 128px;
+
+      @media (max-width: $screen-m) {
+        grid-template-columns: auto 90px;
+        grid-template-rows: minmax(139px, 172px);
+      }
+    }
+
+    &_alone {
+      display: initial;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.03);
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+
+  &__links {
+    display: flex;
+    column-gap: 4px;
+  }
+
+  &__course-title {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0;
+
+    color: $black-color;
+
+    &_light {
+      color: $light-text-color;
+    }
+  }
+
+  &__course-subtitle {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin: 12px 0;
+    height: 106px;
+
+    @media (max-width: $screen-m) {
+      font-size: 14px;
+    }
+  }
+
+  &__course-subtitle_s {
+    height: 125px;
+    margin: 4px 0;
+  }
+
+  &__course-amount {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $blank-focus-color;
+    margin: 0;
+
+    &_dark {
+      color: $black-color;
+    }
+
+    &_light {
+      color: $light-text-color;
+    }
+  }
+
+  &__course {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    z-index: 1;
+    max-width: 217.33px;
+
+    @media (max-width: $screen-lg) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $screen-m) {
+      max-width: 249px;
+    }
+
+    &_c {
+      // max-width: 232px;
+    }
+
+    &_sql {
+      // max-width: 210px;
+    }
+
+    &_it {
+      // max-width: 210px;
+      border-radius: 0 16px 16px 0;
+    }
+
+    &_figma {
+      // max-width: 217.33px;
+    }
+
+    &_traffic {
+      // max-width: 217.33px;
+    }
+
+    &_eng {
+      max-width: 170.33px;
+      margin-right: 12px;
+
+      @media (max-width: $screen-lg) {
+        max-width: 372px;
+      }
+
+      @media (max-width: $screen-s) {
+        margin-right: 4px;
+      }
+    }
+
+    &_all {
+      width: 123px;
+      background-color: $black-color;
+
+      @media (max-width: $screen-s) {
+        width: 118px;
+      }
+    }
+  }
+
+  &__course-box {
+    width: 140px;
+    background: $accent-light-blue-color;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2214px;
+    line-height: 120%;
+
+    @media (max-width: $screen-m) {
+      width: 100px;
+    }
+
+    &_left {
+      border-radius: 0 16px 16px 0;
+      position: relative;
+      right: 12px;
+    }
+
+    &_blue {
+      background: $accent-blue-color;
+      color: $light-text-color;
+    }
+
+    &_yellow {
+      background: $accent-yellow-color;
+    }
+  }
+
+  &__course-box-text {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2214px;
+    line-height: 120%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #161616;
+  }
+}

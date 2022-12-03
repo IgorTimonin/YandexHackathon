@@ -1,0 +1,81 @@
+.chanel-banner {
+  padding: 0 30px 128px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 425px) {
+    padding: 0 20px 68px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 60px;
+    position: relative;
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    margin: 0;
+    margin-bottom: 4px;
+    padding: 0;
+
+    @media screen and (max-width: 425px) {
+      font-size: 24px;
+    }
+  }
+
+  &__caption {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    @media screen and (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+
+  &__image {
+    width: 75px;
+    height: 65px;
+    background: url('./images/tg-big.svg') center / contain no-repeat;
+
+    @media screen and (max-width: 425px) {
+      position: absolute;
+      bottom: -50px;
+      right: 10%;
+      width: 50px;
+      height: 45px;
+    }
+  }
+
+  &__button {
+    @include button;
+    background: $cards-bg-color;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.97);
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 9px 16px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 100vh;
+  background: $primary-bg-color;
+  font-family: $font-family;
+  padding: 12px 0;
+  color: $primary-text-color;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}

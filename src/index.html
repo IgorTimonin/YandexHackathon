@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HackathonYandex</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="layout">
+      <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo" target="_blank" href="https://practicum.yandex.ru/"
+            alt="Главная яндекс практикума"></a>
+          <ul class="header__questions">
+            <li class="header__question-text">
+              <a class="header__question" href="#benefits">Преимущества сотрудничества</a>
+            </li>
+            <li class="header__question-text">
+              <a class="header__question" href="#teaching">Направления обучения</a>
+            </li>
+            <li class="header__question-text">
+              <a class="header__question" href="#slides">Отзывы</a>
+            </li>
+            <li class="header__question-text">
+              <a class="header__question" href="#questions">Частые вопросы</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#vacancy" class=" header__question header__button">Кого мы ищем</a>
+      </header>
+      <main class="content">
+        <section class="section1 main-width-block">
+          <div class="section1__main">
+            <div class="section1__text">
+              <h2 class="section1__title">
+                Станьте наставником или ревьюером
+              </h2>
+              <h2 class="section1__subtitle">и делитесь своим опытом</h2>
+              <p class="section1__description">
+                Ищем наставников и ревьюеров для программирования, анализа
+                данных, менеджмента, маркетинга или дизайна
+              </p>
+              <button class="section1__btn btn" onclick="document.location='./index.html#benefits'">
+                Почему Яндекс Практикум?
+              </button>
+            </div>
+            <div>
+              <img class="section1__img" src="<%=require('./images/title-photo.jpg')%>"
+                alt="девушка в голубой рубашке" />
+            </div>
+          </div>
+
+          <div class="quizz">
+            <div class="quizz__info">
+              <h3 class="quizz__title">Кто ты?</h3>
+              <p class="quizz__text">Ответь на вопросы, а мы подскажем какая роль тебе подходит</p>
+            </div>
+            <button class="quizz__btn btn" type="button">Выбери своего игрока!</button>
+          </div>
+        </section>
+
+        <section class="what-give main-width-block" id="benefits">
+          <h2 class="section-title">Что Яндекс Практикум даст тебе</h2>
+          <div class="what-give__container">
+            <ul class="what-give__cards-list">
+              <li class="what-give__card what-give__animation">
+                <h4 class="what-give__card-title">Дополнительный доход</h4>
+                <p class="what-give__card-text">
+                  Ты будешь зарабатывать 35–55 тысяч рублей в месяц при гибкой
+                  занятости 2–3 часа в день
+                </p>
+              </li>
+              <li class="what-give__card what-give__animation">
+                <h4 class="what-give__card-title">
+                  Общение с людьми из EdTech
+                </h4>
+                <p class="what-give__card-text">
+                  Ты станешь частью сообщества экспертов и посмотришь
+                  на мир онлайн-образования изнутри
+                </p>
+              </li>
+              <li class="what-give__card what-give__animation">
+                <h4 class="what-give__card-title">Саморазвитие</h4>
+                <p class="what-give__card-text">
+                  Публикуй статьи в нашем блоге и выступай на мероприятиях,
+                  чтобы как можно больше людей узнали о тебе как об эксперте,
+                  прокачивай свои soft skills
+                </p>
+              </li>
+              <li class="what-give__card what-give__animation">
+                <h4 class="what-give__card-title">Развитие внутри роли</h4>
+                <p class="what-give__card-text">
+                  Ты сможешь стать старшим наставником или сеньор-ревьювером
+                </p>
+              </li>
+              <li class="what-give__card what-give__animation">
+                <h4 class="what-give__card-title">
+                  Возможность менять жизни людей к лучшему
+                </h4>
+                <p class="what-give__card-text">
+                  Тысячи наших студентов нуждаются в твоих знаниях и опыте —
+                  не бойся ими делиться
+                </p>
+              </li>
+            </ul>
+            <button class="what-give__btn" onclick="document.location='./index.html#vacancy'">Посмотреть вакансии</button>
+          </div>
+        </section>
+
+        <section class="teaching main-width-block" id="teaching">
+          <h2 class="section-title teaching__title">Чему мы учим</h2>
+          <div class="teaching__box">
+            <a class="teaching__link" target="_blank" href="https://practicum.yandex.ru/catalog/programming/"
+              alt="Каталог курсов яндекс практикума">
+              <div class="teaching__course-box">Go</div>
+              <div class="teaching__course teaching__course_c">
+                <h5 class="teaching__course-title">Программирование</h5>
+                <p class="teaching__course-subtitle">Тестирование, фронтенд, бэкенд, DevOps и алгоритмы</p>
+                <p class="teaching__course-amount">31 курс</p>
+              </div>
+            </a>
+
+            <a class="teaching__link teaching__link_right" target="_blank"
+              href="https://practicum.yandex.ru/catalog/design/" alt="Каталог курсов яндекс практикума">
+              <div class="teaching__course teaching__course_figma">
+                <h5 class="teaching__course-title">Дизайн</h5>
+                <p class="teaching__course-subtitle">Графический, коммуникационный, для интерфейсов и продуктов</p>
+                <p class="teaching__course-amount teaching__course-amount_dark">11 курсов</p>
+              </div>
+              <div class="teaching__course-box teaching__course-box_left teaching__course-box_yellow">Figma</div>
+            </a>
+
+            <a class="teaching__link" target="_blank" href="https://practicum.yandex.ru/catalog/data-analysis/"
+              alt="Каталог курсов яндекс практикума">
+              <div class="teaching__course-box teaching__course-box_blue">SQL</div>
+              <div class="teaching__course teaching__course_sql">
+                <h5 class="teaching__course-title">Анализ данных</h5>
+                <p class="teaching__course-subtitle">SQL, аналитика, Data Science и архитектура данных</p>
+                <p class="teaching__course-amount">16 курсов</p>
+              </div>
+            </a>
+
+            <a class="teaching__link teaching__link_right" target="_blank"
+              href="https://practicum.yandex.ru/catalog/marketing/" alt="Каталог курсов яндекс практикума">
+              <div class="teaching__course teaching__course_traffic">
+                <h5 class="teaching__course-title">Маркетинг</h5>
+                <p class="teaching__course-subtitle">Интернет-маркетинг и управление трафиком</p>
+                <p class="teaching__course-amount">2 курса</p>
+              </div>
+              <div class="teaching__course-box teaching__course-box_left">Трафик</div>
+            </a>
+
+            <a class="teaching__link" target="_blank" href="https://practicum.yandex.ru/catalog/management/"
+              alt="Каталог курсов яндекс практикума">
+              <div class="teaching__course-box teaching__course-box_yellow">SCRUM</div>
+              <div class="teaching__course teaching__course_it">
+                <h5 class="teaching__course-title">Менеджмент</h5>
+                <p class="teaching__course-subtitle">Управление проектами, командами и IT-рекрутмент</p>
+                <p class="teaching__course-amount teaching__course-amount_dark">12 курсов</p>
+              </div>
+            </a>
+
+            <div class="teaching__links-box">
+              <a class="teaching__link teaching__link_alone" target="_blank"
+                href="https://practicum.yandex.ru/catalog/eng/" alt="Каталог курсов яндекс практикума">
+                <div class="teaching__course teaching__course_eng">
+                  <h5 class="teaching__course-title">Английский</h5>
+                  <p class="teaching__course-subtitle teaching__course-subtitle_s">Для работы и жизни</p>
+                  <p class="teaching__course-amount">4 курса</p>
+                </div>
+              </a>
+              <a class="teaching__link teaching__link_alone" target="_blank" href="https://practicum.yandex.ru/catalog/"
+                alt="Каталог курсов яндекс практикума">
+                <div class="teaching__course teaching__course_all">
+                  <h5 class="teaching__course-title teaching__course-title_light">Все курсы</h5>
+                  <p class="teaching__course-subtitle teaching__course-subtitle_s"></p>
+                  <p class="teaching__course-amount teaching__course-amount_light">76 курсов</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        </section>
+        <section class="slides" id="slides">
+          <div class="main-width-block">
+            <h2 class="section-title slides__section-title">Что говорят наши&nbsp;сотрудники</h2>
+          </div>
+          <div class="slider">
+            <button type="button" class="slider__control slider__control_type_prev"></button>
+            <div class="slider__wrapper main-width-block">
+              <div class="slides__container">
+              <ul class="slider__inner">
+
+                <li class="slider__item">
+                  <div class="slider__item-inner slider__item-inner_type_video">
+                    <img src="<%=require('./images/vitaly.jpg')%>" alt="видеоотзыв" class="slider__item-video-cover">
+                    <button type="button" class="slider__item-play-btn"
+                      data-source="https://www.youtube.com/embed/lxcehpdwbkc"></button>
+                  </div>
+                  <div class="slider__item-caption">
+                    <h3 class="slider__item-person">Виталик Качановский</h3>
+                    <p class="slider__item-profession">Наставник на QA-факультете</p>
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="slider__item-inner slider__item-inner_type_video">
+                    <img src="<%=require('./images/anastasia.jpg')%>" alt="видеоотзыв" class="slider__item-video-cover">
+                    <button type="button" class="slider__item-play-btn"
+                      data-source="https://www.youtube.com/embed/8EXWLJEHdMk"></button>
+                  </div>
+                  <div class="slider__item-caption">
+                    <h3 class="slider__item-person">Анастасия Лемова</h3>
+                    <p class="slider__item-profession">Наставник на дизайн-факультете</p>
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="slider__item-inner slider__item-inner_type_text">
+                    <h4 class="slider__item-title">Улучшая мир</h4>
+                    <p class="slider__item-text">
+                      Когда я учился писать код, не было онлайн-курсов и площадок с наставниками, и было сложно
+                      ориентироваться, что действительно важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
+                      мне кажется, делаю мир чуть-чуть лучше
+                    </p>
+                  </div>
+                  <div class="slider__item-caption">
+                    <h3 class="slider__item-person">Максим Чеченёв</h3>
+                    <p class="slider__item-profession">Наставник на курсе "Веб разработчик"</p>
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="slider__item-inner slider__item-inner_type_text">
+                    <h4 class="slider__item-title">Идеальный график</h4>
+                    <p class="slider__item-text">
+                      Работа код-ревьюера с гибким графиком, благодаря ей я получаю дополнительный доход и могу делиться
+                      своим опытом. Ведь при написании кода важно не только большое количество практики, но и поддержка
+                      коллег.
+                    </p>
+                  </div>
+                  <div class="slider__item-caption">
+                    <h3 class="slider__item-person">Артём Евсяков</h3>
+                    <p class="slider__item-profession">Старший код-ревьюер веб‑факультета"</p>
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="slider__item-inner slider__item-inner_type_text">
+                    <h4 class="slider__item-title">Новые горизонты</h4>
+                    <p class="slider__item-text">
+                      С Практикумом меня объединяют любовь к технологиям, вера в онлайн-образование и желание помогать
+                      людям покорять новые горизонты. Сам почти полностью осваивал профессию онлайн, поэтому хочу и
+                      другим людям помочь в получении новых навыков.
+                    </p>
+                  </div>
+                  <div class="slider__item-caption">
+                    <h3 class="slider__item-person">Толя Крестенко</h3>
+                    <p class="slider__item-profession">Наставник курса Data Science"</p>
+                  </div>
+                </li>
+
+              </ul>
+              </div>
+            </div>
+            <button type="button" class="slider__control slider__control_type_next"></button>
+          </div>
+          <div class="slides__hearts"></div>
+        </section>
+        <section class="expectations main-width-block">
+          <h2 class="section-title expectations__title">Что Яндекс Практикум ждёт&nbsp;от тебя</h2>
+          <article class="expectations__card expectations__card_type_mentor">
+            <div class="expectations__card-content-wrapper">
+              <h3 class="expectations__card-title">Как от наставника:</h3>
+              <ul class="expectations__card-points">
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">помогать</span> студентам ставить цели, рефлексировать и
+                  делать выводы
+                </li>
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">отвечать</span> отвечать на их вопросы в чате
+                </li>
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">проводить</span> вебинары 2 раза в месяц и давать
+                  обратную связь
+                </li>
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">делиться</span> опытом и мотивировать
+                </li>
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">поддерживать</span> примерно 50 студентов в потоке
+                </li>
+              </ul>
+              <button onclick="document.location='./mentor.html'"
+                class="expectations__card-button expectations__card-button_type_mentor">
+                Хочу стать наставником
+              </button>
+            </div>
+            <div class="expectations__card-img expectations__card-img_type_mentor"></div>
+          </article>
+          <article class="expectations__card expectations__card_type_review">
+            <div class="expectations__card-content-wrapper">
+              <h3 class="expectations__card-title">Как от ревьюера:</h3>
+              <ul class="expectations__card-points">
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">проверять</span> код и проекты студентов
+                </li>
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">объяснять</span> ошибки простыми словами
+                </li>
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">давать</span> корректирующую обратную связь
+                </li>
+                <li class="expectations__card-point">
+                  <span class="expectations__card-point-accent">оценивать</span> работы — зачёт/незачёт
+                </li>
+              </ul>
+              <button onclick="document.location='./vacancy.html'"
+                class="expectations__card-button expectations__card-button_type_review">
+                Хочу стать ревьюером
+              </button>
+            </div>
+            <div class="expectations__card-img expectations__card-img_type_review"></div>
+          </article>
+          <article class="expectations__steps">
+            <h3 class="expectations__steps-title">Стать экспертом просто, как 1,2,3...</h3>
+            <ol class="expectations__steps-list">
+              <li class="expectations__steps-step  expectations__steps-step_with-arrow">
+                <span class="expectations__steps-number">1</span>Выбери роль и заполни заявку
+              </li>
+              <li class="expectations__steps-step">
+                <span class="expectations__steps-number">2</span>Пройди отбор и бесплатное обучение
+              </li>
+              <li class="expectations__steps-step">
+                <span class="expectations__steps-number">3</span>Начни делиться знаниями со студентами Яндекс.Практикума
+              </li>
+            </ol>
+            <span class="expectations__steps-arrow-caption">Ты находишься здесь</span>
+          </article>
+        </section>
+
+        <section class="vacancy main-width-block" id="vacancy">
+          <h2 class="section-title vacancy__title">Наши открытые предложения</h2>
+          <form class="vacancy__filter" name="vacancies">
+            <div class="vacancy__filter-select-container">
+              <button type="button" class="vacancy__filter-select-button">
+                Для наставников
+              </button>
+              <fieldset class="vacancy__filter-job">
+                <input checked name="type" value="mentor" id="type1" class="vacancy__filter-radio" type="radio">
+                <label for="type1" class="vacancy__filter-option">Для наставников</label>
+                <input name="type" value="reviewer" id="type2" class="vacancy__filter-radio" type="radio">
+                <label for="type2" class="vacancy__filter-option">Для ревьюеров</label>
+              </fieldset>
+            </div>
+            <div class="vacancy__filter-items-wrapper">
+              <fieldset class="vacancy__filter-items">
+                <input checked name="area" value="programming" id="vacancy1" class="vacancy__filter-radio" type="radio">
+                <label for="vacancy1" class="vacancy__filter-item">Программирование</label>
+                <input name="area" value="analytics" id="vacancy2" class="vacancy__filter-radio" type="radio">
+                <label for="vacancy2" class="vacancy__filter-item">Аналитика</label>
+                <input name="area" value="design" id="vacancy3" class="vacancy__filter-radio" type="radio">
+                <label for="vacancy3" class="vacancy__filter-item">Дизайн</label>
+                <input name="area" value="marketing" id="vacancy4" class="vacancy__filter-radio" type="radio">
+                <label for="vacancy4" class="vacancy__filter-item">Маркетинг</label>
+                <input name="area" value="management" id="vacancy5" class="vacancy__filter-radio" type="radio">
+                <label for="vacancy5" class="vacancy__filter-item">Менеджмент</label>
+              </fieldset>
+            </div>
+          </form>
+          <div class="vacancy__no-results">
+            <p class="vacancy__no-results-text">Таких вакансий пока нет &#128522;</p>
+            <p class="vacancy__no-results-text">Чтобы посмотреть другие, поменяйте критерии на ваше усмотрение</p>
+            <p class="vacancy__no-results-subscribe">А чтобы быть в курсе появления вакансий - подпишитесь на наш
+              Telegram-канал</p>
+          </div>
+          <ul class="vacancy__results">
+          </ul>
+          <template id="vacancy-card">
+            <li class="vacancy__results-item">
+              <a class="vacancy__results-item-link" href="#">
+                <h3 class="vacancy__results-item-title">Название позиции</h3>
+                <p class="vacancy__results-item-description">
+                  оплата
+                </p>
+              </a>
+            </li>
+          </template>
+          <div class="vacancy__banner ">
+            <div class="vacancy__banner-heading">
+              <h3 class="vacancy__banner-title">Не нашёл подходящее предложение?</h3>
+              <p class="vacancy__banner-subtitle">Оставь контакты и мы подберём тебе роль в нашей коменде</p>
+            </div>
+            <button class="vacancy__banner-button" type="button">Оставить контакты</button>
+          </div>
+        </section>
+        <section class="questions main-width-block" id="questions">
+          <h2 class="section-title">Нас часто спрашивают...</h2>
+          <ul class="questions__accordeon">
+            <li class="questions__accordeon-item">
+              <input class="questions__accordeon-checkbox" type="checkbox" id="rd1">
+              <label for="rd1" class="questions__accordeon-question">
+                У меня совсем нет преподовательского опыта. Я&nbsp;могу вести у вас курсы?
+              </label>
+              <div class="questions__accordeon-content">
+                <p class="questions__content-paragraph">Да. У нас есть Школа экспертов Яндекс Практикума, где вы с нуля
+                  освоите все тонкости преподавания.</p>
+              </div>
+            </li>
+            <li class="questions__accordeon-item">
+              <input class="questions__accordeon-checkbox" type="checkbox" id="rd2">
+              <label for="rd2" class="questions__accordeon-question">
+                Какой график и формат работы?
+              </label>
+              <div class="questions__accordeon-content">
+                <p class="questions__content-paragraph">Это полностью удалённая работа с гибким графиком. Вам
+                  потребуется примерно два-три часа в день, при этом вы сами формируете комфортное расписание.</p>
+              </div>
+            </li>
+            <li class="questions__accordeon-item">
+              <input class="questions__accordeon-checkbox" type="checkbox" id="rd3">
+              <label for="rd3" class="questions__accordeon-question">
+                Как меня введут в работу? И&nbsp;помогут ли, если появятся вопросы?
+              </label>
+              <div class="questions__accordeon-content">
+                <p class="questions__content-paragraph">C организацией работы вам поможет команда Яндекс Практикума:</p>
+                <p class="questions__content-paragraph">- Менеджер онбординга решит вопросы с оформлением и адаптацией.
+                </p>
+                <p class="questions__content-paragraph">- Методист предоставит доступ к материалам для подготовки.
+                  Вместе с автором методист проектирует
+                  образовательные программы: методички по каждому занятию, презентации, инструкции и прочее.</p>
+                <p class="questions__content-paragraph">- Кураторы помогут в общении со студентами: создадут чат в
+                  Telegram или подскажут, как решить конфликт в
+                  группе.</p>
+              </div>
+            </li>
+            <li class="questions__accordeon-item">
+              <input class="questions__accordeon-checkbox" type="checkbox" id="rd4">
+              <label for="rd4" class="questions__accordeon-question">
+                Смогу ли я работать на нескольких направлениях, если обладаю экспертизой в каждом из них?
+              </label>
+              <div class="questions__accordeon-content">
+                <p class="questions__content-paragraph">Да, мы обязательно рассмотрим ваш отклик и передадим коллегам
+                  для дальнейшего ознакомления.</p>
+              </div>
+            </li>
+            <li class="questions__accordeon-item">
+              <input class="questions__accordeon-checkbox" type="checkbox" id="rd5">
+              <label for="rd5" class="questions__accordeon-question">
+                Я не гражданин России, смогу ли я сотрудничать?
+              </label>
+              <div class="questions__accordeon-content">
+                <p class="questions__content-paragraph">Разумеется. Мы заключим с вами договор ГПХ или оплатим оказанные
+                  услуги через Solar Staff.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="chanel-banner main-width-block">
+          <div class="chanel-banner__content">
+            <div class="chanel-banner__text-wrapper">
+              <h2 class="chanel-banner__title">Интересна жизнь Яндекс практикума?</h2>
+              <p class="chanel-banner__caption">Подписывайтесь на наш Telegram-канал, будет интересно!</p>
+            </div>
+            <div class="chanel-banner__image"></div>
+          </div>
+          <a class="chanel-banner__button" href="https://t.me/yndx_practicum" target="_blank">Перейти на канал</a>
+        </section>
+      </main>
+      <footer class="footer main-width-block">
+        <div class="footer__columns">
+          <div class="footer__contacts">
+            <p class="footer__contacts-phone">8 800 800-93-29</p>
+            <p class="footer__contacts-phone-caption">Звонок по России бесплатный</p>
+            <div class="footer__contacts-social">
+              <a href="https://vk.com/yandex.practicum" class="footer__social-icon footer__social-icon_type_vk"></a>
+              <a href="https://t.me/yndx_practicum" class="footer__social-icon footer__social-icon_type_tg"></a>
+              <a href="https://thecode.media/" class="footer__social-link">Журнал</a>
+            </div>
+          </div>
+          <nav class="footer__nav-links">
+            <a href="https://yandex.ru/support/praktikum/feedback.html" class="footer__nav-link">Помощь</a>
+            <a href="https://yandex.ru/legal/praktikum_termsofuse/" class="footer__nav-link">Правовая информация</a>
+            <a href="http://praktikum.yandex.ru/job" class="footer__nav-link">Вакансии</a>
+            <a href="https://praktikum.yandex.ru/employment" class="footer__nav-link">Для разработчиков</a>
+            <a href="https://code.s3.yandex.net/License%20YSDA.pdf" class="footer__nav-link">Лицензии</a>
+            <a href="https://praktikum.yandex.ru/reviews/" class="footer__nav-link">Отзывы</a>
+          </nav>
+        </div>
+        <div class="footer__law-info">
+          <p class="footer__law-info-paragraph">
+            Информация на данной странице описывает возможные варианты получения дополнительного дохода в месяц (т.н.
+            подработка). Не является предложением о работе. Размещённые объявления о потребности в тех или иных услугах
+            не являются вакансиями.
+          </p>
+          <p class="footer__law-info-paragraph">
+            Образовательные услуги оказываются АНО ДПО «ШАД». ШАД — это Школа анализа данных, основанная Яндексом и
+            оказывающая образовательные услуги на основании Лицензии № 036031 от 24 марта 2015 года.
+          </p>
+          <p class="footer__law-info-paragraph">
+            Сертификат о прохождении обучения по программе дополнительного профессионального образования также выдаётся
+            АНО ДПО «ШАД».
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="popup popup_type_quizz">
+      <div class="popup__inner">
+        <button class="popup__close-btn" type="button"></button>
+        <div class="quizz-form quizz-form_visible">
+          <h3 class="quizz-form__title">Найди свой путь в Яндекс Практикуме!</h3>
+          <p class="quizz-form__subtitle">Выбери утверждения, которые лучше описывают тебя</p>
+          <form name="quizz" class="quizz-form__form">
+            <div class="quizz-form__screen quizz-form__screen_visible quizz-form__screen_number_first">
+              <fieldset form="quizz" class="quizz-form__fields">
+                <label class="quizz-form__answer">
+                  <input data-answer="mentor" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Мне интересно помогать студентам ставить цели, рефлексировать и
+                    делать выводы</span>
+                </label>
+                <label class="quizz-form__answer">
+                  <input data-answer="mentor" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Я люблю отвечать на их вопросы в чате</span>
+                </label>
+                <label class="quizz-form__answer">
+                  <input data-answer="review" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Мне нравится проверять код и проекты студентов</span>
+                </label>
+                <label class="quizz-form__answer">
+                  <input data-answer="review" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Мне нравится простыми словами объяснять студентам
+                    их ошибки</span>
+                </label>
+                <label class="quizz-form__answer">
+                  <input data-answer="mentor" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Мне нравится делиться опытом и мотивировать</span>
+                </label>
+              </fieldset>
+              <div class="quizz-form__screen-bottom">
+                <button class="quizz-form__button quizz-form__button_type_next-screen" type="button">
+                  И еще пара вопросов
+                </button>
+                <span class="quizz-form__screen-number">1 из 2</span>
+              </div>
+            </div>
+            <div class="quizz-form__screen quizz-form__screen_number_second">
+              <fieldset form="quizz" class="quizz-form__fields">
+                <label class="quizz-form__answer">
+                  <input data-answer="mentor" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Я хочу проводить вебинары 2-3 раза в месяц и давать обратную
+                    связь</span>
+                </label>
+                <label class="quizz-form__answer">
+                  <input data-answer="mentor" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Я люблю давать людям корректирующую обратную связь</span>
+                </label>
+                <label class="quizz-form__answer">
+                  <input data-answer="review" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">Мне нравится оценивать работы студентов</span>
+                </label>
+                <label class="quizz-form__answer">
+                  <input data-answer="review" class="quizz-form__checkbox-hidden" type="checkbox" name="m1">
+                  <div class="quizz-form__checkbox-visible"></div>
+                  <span class="quizz-form__answer-text">У меня есть более 2 лет опыта работы по специальности</span>
+                </label>
+              </fieldset>
+              <div class="quizz-form__screen-bottom">
+                <button class="quizz-form__button quizz-form__button_type_end-quizz" type="submit">
+                  Круто! Узнаем кто ты?
+                </button>
+                <span class="quizz-form__screen-number">2 из 2</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="quizz-result quizz-result_type_duo">
+          <div class="quizz-result__text">
+            <h3 class="quizz-result__title">А Серёжа у нас амбидекстр… Поздравляем, ты будешь одинаково хорош_а в обеих
+              ролях!</h3>
+            <p class="quizz-result__subtitle">Определись, какая роль тебе ближе: <span
+                class="quizz-result__text-lined">ангела или демона</span> контролёра
+              или консультанта. Для этого советуем почитать описания ролей</p>
+            <button type="button" class="quizz-result__button">К открытым позициям</button>
+          </div>
+          <img src="<%=require('./images/mentor-review.jpg')%>" alt="Хорош во всём" class="quizz-result__image">
+        </div>
+        <div class="quizz-result quizz-result_type_mentor">
+          <div class="quizz-result__text">
+            <h3 class="quizz-result__title">Профессионализм, забота, эмпатия… Кто тут у нас настоящий <span
+                class="quizz-result__text-accent">наставник</span>?</h3>
+            <p class="quizz-result__subtitle">У наших наставников золотое сердце, бездна знаний и опыта.
+              И, конечно же, они готовы делиться всем этим со своими студентами</p>
+            <button type="button" class="quizz-result__button">К открытым позициям</button>
+          </div>
+          <img src="<%=require('./images/mentor.jpg')%>" alt="Наставник" class="quizz-result__image">
+        </div>
+        <div class="quizz-result quizz-result_type_review">
+          <div class="quizz-result__text">
+            <h3 class="quizz-result__title"><span class="quizz-result__text-lined">Строгий</span> добрый
+              и справедливый…</br>Без такого <span class="quizz-result__text-accent">ревьюера</span> нам не обойтись!
+            </h3>
+            <p class="quizz-result__subtitle">Зоркий глаз, быстрый ум, каждое слово на вес золота. Наши ревьюеры хорошо
+              понимают, как важна обратная связь в процессе обучения</p>
+            <button type="button" class="quizz-result__button">К открытым позициям</button>
+          </div>
+          <img src="<%=require('./images/reviewer.jpg')%>" alt="Ревьюер" class="quizz-result__image">
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_type_contacts">
+      <div class="popup__inner popup__inner_type_contacts">
+        <button class="popup__close-btn" type="button"></button>
+        <form class="vacancy-form" name="popup__form" id="popup__form_edit">
+          <h2 class="vacancy-form__title">Не нашли себя в открытых предложениях?
+            Оставьте свои контакты</h2>
+          <fieldset class="vacancy-form__fieldset">
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">ФИО</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span"></span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Почта</p>
+              <div class="vacancy-form__input-box">
+                <input type="email" class="vacancy-form__input" required>
+                <span class="vacancy-form__span"></span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Telegram или телефон</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span"></span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Какое направление вам ближе?</p>
+              <div class="vacancy-form__input-box ">
+                <div class="vacancy-form__radio-box">
+                  <div>
+                    <input type="radio" class="vacancy-form__input-radio" id="mentor" value="mentor" name="job">
+                    <span class="vacancy-form__span-radio vacancy-form__span-radio-visible"></span>
+                    <label class="vacancy-form__label-radio" for="mentor">Наставник</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="vacancy-form__input-radio" id="reviewer" value="reviewer" name="job">
+                    <span class="vacancy-form__span-radio vacancy-form__span-radio-visible"></span>
+                    <label class="vacancy-form__label-radio" for="reviewer">Ревьюер</label>
+                  </div>
+                </div>
+                <span class="vacancy-form__span"></span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Выберите направление (факультет)</p>
+              <div class="vacancy-form__input-box">
+                <select required class="vacancy-form__select">
+                  <option selected disabled></option>
+                  <option value="программирование">программирование</option>
+                  <option value="дизайн">дизайн</option>
+                  <option value="маркетиг">макетиг</option>
+                  <option value="англ. яз">англ. яз</option>
+                  <option value="менеджмент">менеджмент</option>
+                </select>
+                <span class="vacancy-form__span"></span>
+              </div>
+            </div>
+
+            <div class="vacancy-form__box vacancy-form__box_ta">
+              <p class="vacancy-form__input-title vacancy-form__input-title_ta">Перечислите набор технологий, которыми
+                вы владеете и уровень владения каждой</p>
+              <textarea class="vacancy-form__textarea" required></textarea>
+              <span class="vacancy-form__span"></span>
+
+            </div>
+
+
+            <div class="vacancy-form__box">
+              <p class="vacancy-form__input-title">Ссылка на резюме (пожалуйста, проверьте, что вы открыли доступ к
+                докумену )</p>
+              <div class="vacancy-form__input-box">
+                <input type="text" class="vacancy-form__input" required>
+                <span class="vacancy-form__span"></span>
+
+              </div>
+            </div>
+            <div class="vacancy-form__box vacancy-form__box_cb">
+              <input class="quizz-form__checkbox-hidden" type="checkbox">
+              <div class="quizz-form__checkbox-visible"></div>
+              <p class="vacancy-form__input-title vacancy-form__input-title_cb">Я даю согласие АНО ДПО "ШАД" ООО
+                "ЯНДЕКС" на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.</p>
+
+            </div>
+
+          </fieldset>
+          <button class="vacancy-form__button" type="submit" aria-label="Сохранить">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup_type_video">
+      <div class="popup__inner popup__inner_type_video">
+        <iframe class="popup__video-iframe" src="" title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <button class="popup__close-btn popup__close-btn_popup_video" type="button"></button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
